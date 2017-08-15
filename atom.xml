@@ -127,6 +127,41 @@
   </entry>
   
   <entry>
+    <title>Java设计6大原则</title>
+    <link href="https://github.com/efbiz/2017/08/11/Java%E8%AE%BE%E8%AE%A16%E5%A4%A7%E5%8E%9F%E5%88%99/"/>
+    <id>https://github.com/efbiz/2017/08/11/Java设计6大原则/</id>
+    <published>2017-08-11T08:57:38.000Z</published>
+    <updated>2017-08-15T09:04:00.582Z</updated>
+    
+    <content type="html"><![CDATA[<p>一 ： 类单一职责原则：</p>
+<pre><code>一个类只有一个引起这个类变化的原因。即一个类只完成一个功能，如果做不到一个类只完成一个功能，最少要保证一个方法只完成一个功能。
+</code></pre><p>二：依赖倒置原则：</p>
+<pre><code>高层组件应该依赖抽象而不依赖具体，即面向接口编程，一般依赖的成员变量或者参数都应该是抽象的不应该是具体的。
+</code></pre><p>三：里氏代换原则：</p>
+<pre><code>凡是父类出现的地方都可以用子类代替并且原功能没有发生变化，子类不应该覆盖父类的非抽象方法。
+</code></pre><p>四：迪米特法则：</p>
+<pre><code>一个类要尽量的封装自己，一个类只与自己的朋友类打交道一般朋友类是成员变量或者参数，非朋友类一般都是局部变量
+</code></pre><p>五：接口隔离原则：</p>
+<pre><code>一个接口完成的功能尽可能的单一，不要让一个接口承担过多的责任。
+</code></pre><p>六：开闭原则：</p>
+<pre><code>对扩展开放，对修改闭合
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一 ： 类单一职责原则：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;一个类只有一个引起这个类变化的原因。即一个类只完成一个功能，如果做不到一个类只完成一个功能，最少要保证一个方法只完成一个功能。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;二：依赖倒置原则：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;高层组件
+    
+    </summary>
+    
+    
+      <category term="Java设计" scheme="https://github.com/efbiz/tags/Java%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>领域驱动设计原理</title>
     <link href="https://github.com/efbiz/2017/08/06/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1%E5%8E%9F%E7%90%86/"/>
     <id>https://github.com/efbiz/2017/08/06/领域驱动设计原理/</id>
