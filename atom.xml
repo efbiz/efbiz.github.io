@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/efbiz/"/>
-  <updated>2017-08-15T04:42:57.791Z</updated>
+  <updated>2017-08-15T06:46:26.992Z</updated>
   <id>https://github.com/efbiz/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://github.com/efbiz/2017/08/15/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E6%96%B9%E6%A1%88%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/"/>
     <id>https://github.com/efbiz/2017/08/15/分布式定时任务方案技术选型/</id>
     <published>2017-08-15T00:57:41.000Z</published>
-    <updated>2017-08-15T04:42:57.791Z</updated>
+    <updated>2017-08-15T06:46:26.992Z</updated>
     
     <content type="html"><![CDATA[<h1 id="我们先思考下面几个业务场景的解决方案"><a href="#我们先思考下面几个业务场景的解决方案" class="headerlink" title="我们先思考下面几个业务场景的解决方案:"></a>我们先思考下面几个业务场景的解决方案:</h1><ul>
 <li>支付系统每天凌晨1点跑批，进行一天清算，每月1号进行上个月清算</li>
@@ -29,7 +29,7 @@
 <li>商品成功发货后，需要向客户发送短信提醒</li>
 </ul>
 <blockquote>
-<p>类似的业务场景非常多，我们怎么解决？</p>
+<p>类似的业务场景非常多，我们怎么解决？<br><a id="more"></a></p>
 </blockquote>
 <h1 id="为什么我们需要定时任务"><a href="#为什么我们需要定时任务" class="headerlink" title="为什么我们需要定时任务"></a>为什么我们需要定时任务</h1><p>很多业务场景需要我们某一特定的时刻去做某件任务，定时任务解决的就是这种业务场景。一般来说，系统可以使用消息传递代替部分定时任务，两者有很多相似之处，可以相互替换场景。如，上面发货成功发短信通知客户的业务场景，我们可以在发货成功后发送MQ消息到队列，然后去消费mq消息，发送短信。<br>但在某些场景下不能互换：</p>
 <blockquote>
@@ -90,12 +90,24 @@
 </ul>
 <h1 id="综合对比"><a href="#综合对比" class="headerlink" title="综合对比"></a>综合对比</h1><p><img src="../images/ms/MicroServiceJob.png" alt=""></p>
 <h1 id="总结和结论"><a href="#总结和结论" class="headerlink" title="总结和结论"></a>总结和结论</h1><p>  共同点： E-Job和X-job都有广泛的用户基础和完整的技术文档，都能满足定时任务的基本功能需求。<br>  不同点<br>  X-Job 侧重的业务实现的简单和管理的方便，学习成本简单，失败策略和路由策略丰富。推荐使用在“用户基数相对少，服务器数量在一定范围内”的情景下使用<br>  E-Job 关注的是数据，增加了弹性扩容和数据分片的思路，以便于更大限度的利用分布式服务器的资源。但是学习成本相对高些，推荐在“数据量庞大，且部署服务器数量较多”时使用</p>
+<h1 id="附-定时任务的其他方案"><a href="#附-定时任务的其他方案" class="headerlink" title="附 定时任务的其他方案"></a>附 定时任务的其他方案</h1><p>发货后超过10天未收货时系统自动确认收货的多种实现方式</p>
+<blockquote>
+<p>每天定时半夜筛选第二天 可以自动确认收货的订单,然后第二天 每10分钟 执行一次确认收货 开销不会太大吧 时间也相对精确</p>
+<p>自动确认收货这个状态如果仅仅是让客户端看的话，等用户下一次上线的时间，做一次运算就可以了。</p>
+<p>延迟和定时消息投递<br>ActiveMQ提供了一种broker端消息定时调度机制。适用于：1、不希望消息马上被broker投递出去，而是想要消息60秒以后发给消费者，2、想让消息没隔一定时间投递一次，一共投递指定的次数<br>RabbitMQ可以针对Queue和Message设置 x-message-tt，来控制消息的生存时间，如果超时，则消息变为dead letter。利用DLX，当消息在一个队列中变成死信后，它能被重新publish到另一个Exchange。这时候消息就可以重新被消费。</p>
+</blockquote>
 ]]></content>
     
     <summary type="html">
     
       &lt;h1 id=&quot;我们先思考下面几个业务场景的解决方案&quot;&gt;&lt;a href=&quot;#我们先思考下面几个业务场景的解决方案&quot; class=&quot;headerlink&quot; title=&quot;我们先思考下面几个业务场景的解决方案:&quot;&gt;&lt;/a&gt;我们先思考下面几个业务场景的解决方案:&lt;/h1&gt;&lt;ul&gt;
-&lt;l
+&lt;li&gt;支付系统每天凌晨1点跑批，进行一天清算，每月1号进行上个月清算&lt;/li&gt;
+&lt;li&gt;电商整点抢购，商品价格8点整开始优惠&lt;/li&gt;
+&lt;li&gt;12306购票系统，超过30分钟没有成功支付订单的，进行回收处理&lt;/li&gt;
+&lt;li&gt;商品成功发货后，需要向客户发送短信提醒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类似的业务场景非常多，我们怎么解决？&lt;br&gt;
     
     </summary>
     

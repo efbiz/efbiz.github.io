@@ -102,19 +102,19 @@
 
 
 
-<meta name="description" content="我们先思考下面几个业务场景的解决方案: 支付系统每天凌晨1点跑批，进行一天清算，每月1号进行上个月清算 电商整点抢购，商品价格8点整开始优惠 12306购票系统，超过30分钟没有成功支付订单的，进行回收处理 商品成功发货后，需要向客户发送短信提醒   类似的业务场景非常多，我们怎么解决？  为什么我们需要定时任务很多业务场景需要我们某一特定的时刻去做某件任务，定时任务解决的就是这种业务场景。一般来">
+<meta name="description" content="我们先思考下面几个业务场景的解决方案: 支付系统每天凌晨1点跑批，进行一天清算，每月1号进行上个月清算 电商整点抢购，商品价格8点整开始优惠 12306购票系统，超过30分钟没有成功支付订单的，进行回收处理 商品成功发货后，需要向客户发送短信提醒   类似的业务场景非常多，我们怎么解决？">
 <meta name="keywords" content="分布式架构,微服务,定时任务">
 <meta property="og:type" content="article">
 <meta property="og:title" content="分布式定时任务调度系统技术选型">
 <meta property="og:url" content="https://github.com/efbiz/2017/08/15/分布式定时任务方案技术选型/index.html">
 <meta property="og:site_name" content="EFbiz">
-<meta property="og:description" content="我们先思考下面几个业务场景的解决方案: 支付系统每天凌晨1点跑批，进行一天清算，每月1号进行上个月清算 电商整点抢购，商品价格8点整开始优惠 12306购票系统，超过30分钟没有成功支付订单的，进行回收处理 商品成功发货后，需要向客户发送短信提醒   类似的业务场景非常多，我们怎么解决？  为什么我们需要定时任务很多业务场景需要我们某一特定的时刻去做某件任务，定时任务解决的就是这种业务场景。一般来">
+<meta property="og:description" content="我们先思考下面几个业务场景的解决方案: 支付系统每天凌晨1点跑批，进行一天清算，每月1号进行上个月清算 电商整点抢购，商品价格8点整开始优惠 12306购票系统，超过30分钟没有成功支付订单的，进行回收处理 商品成功发货后，需要向客户发送短信提醒   类似的业务场景非常多，我们怎么解决？">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://github.com/efbiz/2017/08/15/images/ms/MicroServiceJob.png">
-<meta property="og:updated_time" content="2017-08-15T04:42:57.791Z">
+<meta property="og:updated_time" content="2017-08-15T06:46:26.992Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式定时任务调度系统技术选型">
-<meta name="twitter:description" content="我们先思考下面几个业务场景的解决方案: 支付系统每天凌晨1点跑批，进行一天清算，每月1号进行上个月清算 电商整点抢购，商品价格8点整开始优惠 12306购票系统，超过30分钟没有成功支付订单的，进行回收处理 商品成功发货后，需要向客户发送短信提醒   类似的业务场景非常多，我们怎么解决？  为什么我们需要定时任务很多业务场景需要我们某一特定的时刻去做某件任务，定时任务解决的就是这种业务场景。一般来">
+<meta name="twitter:description" content="我们先思考下面几个业务场景的解决方案: 支付系统每天凌晨1点跑批，进行一天清算，每月1号进行上个月清算 电商整点抢购，商品价格8点整开始优惠 12306购票系统，超过30分钟没有成功支付订单的，进行回收处理 商品成功发货后，需要向客户发送短信提醒   类似的业务场景非常多，我们怎么解决？">
 <meta name="twitter:image" content="https://github.com/efbiz/2017/08/15/images/ms/MicroServiceJob.png">
 
 
@@ -398,6 +398,17 @@
 
           
             
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/08/15/分布式定时任务方案技术选型/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/08/15/分布式定时任务方案技术选型/" itemprop="commentsCount"></span>
+                </a>
+              
+            
           
 
           
@@ -457,7 +468,7 @@
 <li>商品成功发货后，需要向客户发送短信提醒</li>
 </ul>
 <blockquote>
-<p>类似的业务场景非常多，我们怎么解决？</p>
+<p>类似的业务场景非常多，我们怎么解决？<br><a id="more"></a></p>
 </blockquote>
 <h1 id="为什么我们需要定时任务"><a href="#为什么我们需要定时任务" class="headerlink" title="为什么我们需要定时任务"></a>为什么我们需要定时任务</h1><p>很多业务场景需要我们某一特定的时刻去做某件任务，定时任务解决的就是这种业务场景。一般来说，系统可以使用消息传递代替部分定时任务，两者有很多相似之处，可以相互替换场景。如，上面发货成功发短信通知客户的业务场景，我们可以在发货成功后发送MQ消息到队列，然后去消费mq消息，发送短信。<br>但在某些场景下不能互换：</p>
 <blockquote>
@@ -518,6 +529,12 @@
 </ul>
 <h1 id="综合对比"><a href="#综合对比" class="headerlink" title="综合对比"></a>综合对比</h1><p><img src="../images/ms/MicroServiceJob.png" alt=""></p>
 <h1 id="总结和结论"><a href="#总结和结论" class="headerlink" title="总结和结论"></a>总结和结论</h1><p>  共同点： E-Job和X-job都有广泛的用户基础和完整的技术文档，都能满足定时任务的基本功能需求。<br>  不同点<br>  X-Job 侧重的业务实现的简单和管理的方便，学习成本简单，失败策略和路由策略丰富。推荐使用在“用户基数相对少，服务器数量在一定范围内”的情景下使用<br>  E-Job 关注的是数据，增加了弹性扩容和数据分片的思路，以便于更大限度的利用分布式服务器的资源。但是学习成本相对高些，推荐在“数据量庞大，且部署服务器数量较多”时使用</p>
+<h1 id="附-定时任务的其他方案"><a href="#附-定时任务的其他方案" class="headerlink" title="附 定时任务的其他方案"></a>附 定时任务的其他方案</h1><p>发货后超过10天未收货时系统自动确认收货的多种实现方式</p>
+<blockquote>
+<p>每天定时半夜筛选第二天 可以自动确认收货的订单,然后第二天 每10分钟 执行一次确认收货 开销不会太大吧 时间也相对精确</p>
+<p>自动确认收货这个状态如果仅仅是让客户端看的话，等用户下一次上线的时间，做一次运算就可以了。</p>
+<p>延迟和定时消息投递<br>ActiveMQ提供了一种broker端消息定时调度机制。适用于：1、不希望消息马上被broker投递出去，而是想要消息60秒以后发给消费者，2、想让消息没隔一定时间投递一次，一共投递指定的次数<br>RabbitMQ可以针对Queue和Message设置 x-message-tt，来控制消息的生存时间，如果超时，则消息变为dead letter。利用DLX，当消息在一个队列中变成死信后，它能被重新publish到另一个Exchange。这时候消息就可以重新被消费。</p>
+</blockquote>
 
       
     </div>
@@ -633,6 +650,8 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
     
   </div>
 
@@ -775,7 +794,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#我们先思考下面几个业务场景的解决方案"><span class="nav-number">1.</span> <span class="nav-text">我们先思考下面几个业务场景的解决方案:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么我们需要定时任务"><span class="nav-number">2.</span> <span class="nav-text">为什么我们需要定时任务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#java有哪些定时任务的框架"><span class="nav-number">3.</span> <span class="nav-text">java有哪些定时任务的框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#单机"><span class="nav-number">3.1.</span> <span class="nav-text">单机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布"><span class="nav-number">3.2.</span> <span class="nav-text">分布</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分布式任务调度系统对比"><span class="nav-number">4.</span> <span class="nav-text">分布式任务调度系统对比</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目背景及社区力量"><span class="nav-number">4.1.</span> <span class="nav-text">项目背景及社区力量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持集群部署"><span class="nav-number">4.2.</span> <span class="nav-text">支持集群部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多节点部署时任务不能重复执行"><span class="nav-number">4.3.</span> <span class="nav-text">多节点部署时任务不能重复执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日志可追溯"><span class="nav-number">4.4.</span> <span class="nav-text">日志可追溯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监控告警"><span class="nav-number">4.5.</span> <span class="nav-text">监控告警</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#弹性扩容缩容"><span class="nav-number">4.6.</span> <span class="nav-text">弹性扩容缩容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持并行调度"><span class="nav-number">4.7.</span> <span class="nav-text">支持并行调度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高可用策略"><span class="nav-number">4.8.</span> <span class="nav-text">高可用策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#失败处理策略"><span class="nav-number">4.9.</span> <span class="nav-text">失败处理策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态分片策略"><span class="nav-number">4.10.</span> <span class="nav-text">动态分片策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#和quartz框架对比"><span class="nav-number">4.11.</span> <span class="nav-text">和quartz框架对比</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#综合对比"><span class="nav-number">5.</span> <span class="nav-text">综合对比</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结和结论"><span class="nav-number">6.</span> <span class="nav-text">总结和结论</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#我们先思考下面几个业务场景的解决方案"><span class="nav-number">1.</span> <span class="nav-text">我们先思考下面几个业务场景的解决方案:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么我们需要定时任务"><span class="nav-number">2.</span> <span class="nav-text">为什么我们需要定时任务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#java有哪些定时任务的框架"><span class="nav-number">3.</span> <span class="nav-text">java有哪些定时任务的框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#单机"><span class="nav-number">3.1.</span> <span class="nav-text">单机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布"><span class="nav-number">3.2.</span> <span class="nav-text">分布</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分布式任务调度系统对比"><span class="nav-number">4.</span> <span class="nav-text">分布式任务调度系统对比</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目背景及社区力量"><span class="nav-number">4.1.</span> <span class="nav-text">项目背景及社区力量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持集群部署"><span class="nav-number">4.2.</span> <span class="nav-text">支持集群部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多节点部署时任务不能重复执行"><span class="nav-number">4.3.</span> <span class="nav-text">多节点部署时任务不能重复执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日志可追溯"><span class="nav-number">4.4.</span> <span class="nav-text">日志可追溯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监控告警"><span class="nav-number">4.5.</span> <span class="nav-text">监控告警</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#弹性扩容缩容"><span class="nav-number">4.6.</span> <span class="nav-text">弹性扩容缩容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持并行调度"><span class="nav-number">4.7.</span> <span class="nav-text">支持并行调度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高可用策略"><span class="nav-number">4.8.</span> <span class="nav-text">高可用策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#失败处理策略"><span class="nav-number">4.9.</span> <span class="nav-text">失败处理策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态分片策略"><span class="nav-number">4.10.</span> <span class="nav-text">动态分片策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#和quartz框架对比"><span class="nav-number">4.11.</span> <span class="nav-text">和quartz框架对比</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#综合对比"><span class="nav-number">5.</span> <span class="nav-text">综合对比</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结和结论"><span class="nav-number">6.</span> <span class="nav-text">总结和结论</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附-定时任务的其他方案"><span class="nav-number">7.</span> <span class="nav-text">附 定时任务的其他方案</span></a></li></ol></div>
             
 
           </div>
@@ -963,6 +982,21 @@
 
 
 
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyt8q81Tz';
+      var conf = 'f4d6f5e35dcd359f030389f32b29a357';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
 
 
 
