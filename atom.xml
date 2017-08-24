@@ -175,14 +175,19 @@
     <link href="https://github.com/efbiz/2017/08/06/%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1%E5%8E%9F%E7%90%86/"/>
     <id>https://github.com/efbiz/2017/08/06/领域驱动设计原理/</id>
     <published>2017-08-06T12:57:41.000Z</published>
-    <updated>2017-08-07T07:10:22.535Z</updated>
+    <updated>2017-08-24T06:14:47.290Z</updated>
     
     <content type="html"><![CDATA[<p>使用领域驱动设计的业务价值<br>1、你获得了一个非常有用的领域模型<br>2、你的业务得到了更准确的定义和理解<br>3、领域专家可以为软件设计做出贡献<br>4、更好的用户体验<br>5、清晰的模型边界<br>6、更好的企业架构<br>7、敏捷、迭代式和持续建模<br>8、使用战略和战术新工具</p>
+<a id="more"></a>
+<h1 id="领域驱动设计参考项目推荐"><a href="#领域驱动设计参考项目推荐" class="headerlink" title="领域驱动设计参考项目推荐"></a>领域驱动设计参考项目推荐</h1><p>1.IDDD_Samples<br>实现领域驱动设计作者VaughnVernon 所做的四种不同实现<br><a href="https://github.com/VaughnVernon/IDDD_Samples">https://github.com/VaughnVernon/IDDD_Samples</a></p>
+<p>2.dddsample-core<br>领域驱动设计(Domain Driven Design)的官方参考架构，该架构分成了Interfaces、Applications和Domain三层以及包含各类基础设施的Infrastructure。<br><a href="https://github.com/citerus/dddsample-core">https://github.com/citerus/dddsample-core</a></p>
+<p>3.Axon-trader<br>基于命令查询职责分离(CQRS)模式的一种领域驱动实现<br><a href="https://github.com/AxonFramework/Axon-trader，依赖框架">https://github.com/AxonFramework/Axon-trader，依赖框架</a> <a href="https://github.com/AxonFramework/AxonFramework">https://github.com/AxonFramework/AxonFramework</a><br>其中有整合disruptor的实现的命令总线和自身的命令总线。<br>Disruptor是一个高性能的异步处理框架，或者可以认为是最快的消息框架(轻量的JMS)，也可以认为是一个观察者模式实现，或者事件-监听模式的实现，直接称disruptor模式。disruptor最大特点是高性能，其LMAX架构可以获得每秒6百万订单，用1微秒的延迟获得吞吐量为100K+。</p>
+<h1 id="《领域驱动设计模式、原理与实践》-整理思维导图"><a href="#《领域驱动设计模式、原理与实践》-整理思维导图" class="headerlink" title="《领域驱动设计模式、原理与实践》 整理思维导图"></a>《领域驱动设计模式、原理与实践》 整理思维导图</h1><p><img src="领域驱动设计模式、原理与实践.png" alt=""> </p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;使用领域驱动设计的业务价值&lt;br&gt;1、你获得了一个非常有用的领域模型&lt;br&gt;2、你的业务得到了更准确的定义和理解&lt;br&gt;3、领域专家可以为软件设计做出贡献&lt;br&gt;4、更好的用户体验&lt;br&gt;5、清晰的模型边界&lt;br&gt;6、更好的企业架构&lt;br&gt;7、敏捷、迭代式和持续建模&lt;br&gt;
+      &lt;p&gt;使用领域驱动设计的业务价值&lt;br&gt;1、你获得了一个非常有用的领域模型&lt;br&gt;2、你的业务得到了更准确的定义和理解&lt;br&gt;3、领域专家可以为软件设计做出贡献&lt;br&gt;4、更好的用户体验&lt;br&gt;5、清晰的模型边界&lt;br&gt;6、更好的企业架构&lt;br&gt;7、敏捷、迭代式和持续建模&lt;br&gt;8、使用战略和战术新工具&lt;/p&gt;
     
     </summary>
     

@@ -25,7 +25,7 @@
   <entry>
     <title><![CDATA[领域驱动设计原理]]></title>
     <url>%2F2017%2F08%2F06%2F%E9%A2%86%E5%9F%9F%E9%A9%B1%E5%8A%A8%E8%AE%BE%E8%AE%A1%E5%8E%9F%E7%90%86%2F</url>
-    <content type="text"><![CDATA[使用领域驱动设计的业务价值1、你获得了一个非常有用的领域模型2、你的业务得到了更准确的定义和理解3、领域专家可以为软件设计做出贡献4、更好的用户体验5、清晰的模型边界6、更好的企业架构7、敏捷、迭代式和持续建模8、使用战略和战术新工具]]></content>
+    <content type="text"><![CDATA[使用领域驱动设计的业务价值1、你获得了一个非常有用的领域模型2、你的业务得到了更准确的定义和理解3、领域专家可以为软件设计做出贡献4、更好的用户体验5、清晰的模型边界6、更好的企业架构7、敏捷、迭代式和持续建模8、使用战略和战术新工具 领域驱动设计参考项目推荐1.IDDD_Samples实现领域驱动设计作者VaughnVernon 所做的四种不同实现https://github.com/VaughnVernon/IDDD_Samples 2.dddsample-core领域驱动设计(Domain Driven Design)的官方参考架构，该架构分成了Interfaces、Applications和Domain三层以及包含各类基础设施的Infrastructure。https://github.com/citerus/dddsample-core 3.Axon-trader基于命令查询职责分离(CQRS)模式的一种领域驱动实现https://github.com/AxonFramework/Axon-trader，依赖框架 https://github.com/AxonFramework/AxonFramework其中有整合disruptor的实现的命令总线和自身的命令总线。Disruptor是一个高性能的异步处理框架，或者可以认为是最快的消息框架(轻量的JMS)，也可以认为是一个观察者模式实现，或者事件-监听模式的实现，直接称disruptor模式。disruptor最大特点是高性能，其LMAX架构可以获得每秒6百万订单，用1微秒的延迟获得吞吐量为100K+。 《领域驱动设计模式、原理与实践》 整理思维导图]]></content>
       <categories>
         <category>领域驱动设计</category>
         <category>模式、原理与实践</category>
