@@ -84,7 +84,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="源码学习 架构师之路," />
+  <meta name="keywords" content="Java8 日期/时间工具类," />
 
 
 
@@ -102,18 +102,18 @@
 
 
 
-<meta name="description" content="学习新的代码库是一项艰巨的任务。如果你不能和创建该库的研发人员进行交流，自己研究该库是一个很复杂的过程。本文给出六个步骤指引开发者学习。">
-<meta name="keywords" content="源码学习 架构师之路">
+<meta name="description" content="为什么我们需要新的Java日期/时间API？在开始研究Java 8日期/时间API之前，让我们先来看一下为什么我们需要这样一个新的API。在Java中，现有的与日期和时间相关的类存在诸多问题，其中有：1、Java的日期/时间类的定义并不一致，在java.util和java.sql的包中都有日期类，此外用于格式化和解析的类在java.text包中定义。2、java.util.Date同时包含日期和时">
+<meta name="keywords" content="Java8 日期&#x2F;时间工具类">
 <meta property="og:type" content="article">
-<meta property="og:title" content="轻松学习新代码库的六个步骤">
-<meta property="og:url" content="https://github.com/efbiz/2017/09/09/轻松学习新代码库的六个步骤/index.html">
+<meta property="og:title" content="Java8 日期&#x2F;时间（Date Time）API指南">
+<meta property="og:url" content="https://github.com/efbiz/2017/09/19/Java8-日期-时间（Date-Time）API指南/index.html">
 <meta property="og:site_name" content="EFbiz">
-<meta property="og:description" content="学习新的代码库是一项艰巨的任务。如果你不能和创建该库的研发人员进行交流，自己研究该库是一个很复杂的过程。本文给出六个步骤指引开发者学习。">
+<meta property="og:description" content="为什么我们需要新的Java日期/时间API？在开始研究Java 8日期/时间API之前，让我们先来看一下为什么我们需要这样一个新的API。在Java中，现有的与日期和时间相关的类存在诸多问题，其中有：1、Java的日期/时间类的定义并不一致，在java.util和java.sql的包中都有日期类，此外用于格式化和解析的类在java.text包中定义。2、java.util.Date同时包含日期和时">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-09T08:38:33.878Z">
+<meta property="og:updated_time" content="2017-09-19T10:34:27.320Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="轻松学习新代码库的六个步骤">
-<meta name="twitter:description" content="学习新的代码库是一项艰巨的任务。如果你不能和创建该库的研发人员进行交流，自己研究该库是一个很复杂的过程。本文给出六个步骤指引开发者学习。">
+<meta name="twitter:title" content="Java8 日期&#x2F;时间（Date Time）API指南">
+<meta name="twitter:description" content="为什么我们需要新的Java日期/时间API？在开始研究Java 8日期/时间API之前，让我们先来看一下为什么我们需要这样一个新的API。在Java中，现有的与日期和时间相关的类存在诸多问题，其中有：1、Java的日期/时间类的定义并不一致，在java.util和java.sql的包中都有日期类，此外用于格式化和解析的类在java.text包中定义。2、java.util.Date同时包含日期和时">
 
 
 
@@ -141,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/efbiz/2017/09/09/轻松学习新代码库的六个步骤/"/>
+  <link rel="canonical" href="https://github.com/efbiz/2017/09/19/Java8-日期-时间（Date-Time）API指南/"/>
 
 
 
 
 
-  <title>轻松学习新代码库的六个步骤 | EFbiz</title>
+  <title>Java8 日期/时间（Date Time）API指南 | EFbiz</title>
   
 
 
@@ -320,7 +320,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://github.com/efbiz/2017/09/09/轻松学习新代码库的六个步骤/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/efbiz/2017/09/19/Java8-日期-时间（Date-Time）API指南/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="joni@efbiz.org">
@@ -337,7 +337,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">轻松学习新代码库的六个步骤</h2>
+          <h2 class="post-title" itemprop="name headline">Java8 日期/时间（Date Time）API指南</h2>
         
 
         <div class="post-meta">
@@ -349,8 +349,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-09T16:35:16+08:00">
-                2017-09-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-19T16:39:51+08:00">
+                2017-09-19
               </time>
             
 
@@ -359,6 +359,39 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/java8/" itemprop="url" rel="index">
+                    <span itemprop="name">java8</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -369,8 +402,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/09/09/轻松学习新代码库的六个步骤/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/09/09/轻松学习新代码库的六个步骤/" itemprop="commentsCount"></span>
+                <a href="/2017/09/19/Java8-日期-时间（Date-Time）API指南/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/09/19/Java8-日期-时间（Date-Time）API指南/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -392,7 +425,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,298
+                  3,058
                 </span>
               
 
@@ -408,7 +441,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  4
+                  12
                 </span>
               
             </div>
@@ -426,24 +459,127 @@
       
 
       
-        <p>学习新的代码库是一项艰巨的任务。如果你不能和创建该库的研发人员进行交流，自己研究该库是一个很复杂的过程。本文给出六个步骤指引开发者学习。</p>
+        <h1 id="为什么我们需要新的Java日期-时间API？"><a href="#为什么我们需要新的Java日期-时间API？" class="headerlink" title="为什么我们需要新的Java日期/时间API？"></a>为什么我们需要新的Java日期/时间API？</h1><p>在开始研究Java 8日期/时间API之前，让我们先来看一下为什么我们需要这样一个新的API。在Java中，现有的与日期和时间相关的类存在诸多问题，其中有：<br>1、Java的日期/时间类的定义并不一致，在java.util和java.sql的包中都有日期类，此外用于格式化和解析的类在java.text包中定义。<br>2、java.util.Date同时包含日期和时间，而java.sql.Date仅包含日期，将其纳入java.sql包并不合理。另外这两个类都有相同的名字，这本身就是一个非常糟糕的设计。<br>3、对于时间、时间戳、格式化以及解析，并没有一些明确定义的类。对于格式化和解析的需求，我们有java.text.DateFormat抽象类，但通常情况下，SimpleDateFormat类被用于此类需求。<br>4、所有的日期类都是可变的，因此他们都不是线程安全的，这是Java日期类最大的问题之一。<br>5、日期类并不提供国际化，没有时区支持，因此Java引入了java.util.Calendar和java.util.TimeZone类，但他们同样存在上述所有的问题。<br>在现有的日期和日历类中定义的方法还存在一些其他的问题，但以上问题已经很清晰地表明：Java需要一个健壮的日期/时间类。这也是为什么Joda Time在Java日期/时间需求中扮演了高质量替换的重要角色。</p>
 <a id="more"></a>
-<h1 id="步骤一：创建业务词汇表单"><a href="#步骤一：创建业务词汇表单" class="headerlink" title="步骤一：创建业务词汇表单"></a>步骤一：创建业务词汇表单</h1><p>如果你是一位开发者，你或许会出席过一些软件设计会议，会议可能会涉及到创建新术语，以便于更好的软件设计交流。在创建该术语的同时可能会发生与该术语同义的情况，会议成员不可避免地讨论这些具有相同概念的术语，这会让人感到混乱。</p>
-<p>这时，业务词汇表单就变得尤为重要，它能记录这些新的术语。在软件设计的每个阶段，你会不断碰到新的术语和概念。把这些术语保存起来非常重要，并且边学边存储，绝对有益无害。</p>
-<p>业务词汇表单应该包含几个不同的列，分别是：“术语名称”、“语境”、“定义”。当你看到一个有趣的术语和短语时，可以更新该表单。该表单有可能包含大量的同义词，也有可能有对同一术语的不同定义解释。出现上述的情况，你需要结合上下文的语境进行分析使用。</p>
-<h1 id="步骤二：了解应用程序"><a href="#步骤二：了解应用程序" class="headerlink" title="步骤二：了解应用程序"></a>步骤二：了解应用程序</h1><p>运行应用程序并且获知该程序提供的功能。如果你不知道该程序是做什么的，就无法在源代码中寻找有关信息。</p>
-<h1 id="步骤三：浏览有效的类库文档"><a href="#步骤三：浏览有效的类库文档" class="headerlink" title="步骤三：浏览有效的类库文档"></a>步骤三：浏览有效的类库文档</h1><p>迄今为止，是不是任何的体系结构或设计类库文档的内容都是合理呢？这有待考量。类库文档是一个极好的资源。如果旧的体系架构已经历了数次修订，它就不再值得你花时间去阅读整个文档，不过，你可以大概浏览一下。如果你足够幸运，你可以在文档中遇到你所需的术语。</p>
-<h1 id="步骤四：做假设"><a href="#步骤四：做假设" class="headerlink" title="步骤四：做假设"></a>步骤四：做假设</h1><p>几乎所有的应用程序中，开发者都会碰到如下情况：环境的配置、I18N（语言的国际化）、应用程序的文件格式、用户界面、应用程序的启动和关闭。针对这些情况，可以进行假设。开发者可以假设应用程序中的任何一段代码块，哪个代码块是应用程序的核心，这个才是学习的重点。</p>
-<h1 id="步骤-五：定位第三方库文件"><a href="#步骤-五：定位第三方库文件" class="headerlink" title="步骤 五：定位第三方库文件"></a>步骤 五：定位第三方库文件</h1><p>代码库很有可能存在一些的依赖。如果检查到项目中包含第三方库文件，可以查看该库文件是如何与应用程序的功能联系起来的，某处的模块或组件是如何使用第三方库的。</p>
-<h1 id="步骤六：分析代码"><a href="#步骤六：分析代码" class="headerlink" title="步骤六：分析代码"></a>步骤六：分析代码</h1><p>本部分列举几个选项来分析新的代码库：</p>
-<h2 id="1、目录以及文件架构"><a href="#1、目录以及文件架构" class="headerlink" title="1、目录以及文件架构"></a>1、目录以及文件架构</h2><p>可以把目录名中的一些术语添加到业务词汇表单中。文件架构可以提供一些基本的线索，如：前台代码及后台代码。它们可以分别放在独立的文件中。开发者会发现，凡具有特定功能的模块代码都被放在独立的文件夹中。按照这个线索，就知道如何进行查找了。</p>
-<h2 id="2、功能文件的映射"><a href="#2、功能文件的映射" class="headerlink" title="2、功能文件的映射"></a>2、功能文件的映射</h2><p>在用户界面上写一些可执行的功能代码块。把重要的代码块放到一个单独的文件夹中，并对文件夹进行命名。这个文件夹有可能对团队中的其他人有用，他们可以把该功能应用到项目编程中。</p>
-<h2 id="3、单元测试"><a href="#3、单元测试" class="headerlink" title="3、单元测试"></a>3、单元测试</h2><p>如果采用单元测试，开发者可能会用到第三方框架。你可以用第三方框架来辅助测试。即使没有找到合适的框架，仍然可以来做单元测试。当然，你也可以不采用单元测试，但我依然推荐你用，因为有助于你对源代码中组件的理解。</p>
-<h2 id="4、注释"><a href="#4、注释" class="headerlink" title="4、注释"></a>4、注释</h2><p>源代码中可能包含一些注释，有的注释对开发人员很有帮助，有的会让人有所误导或有的注释可能过期了。如果你觉得注释有问题，你可以通过调试器追踪有关代码，了解相关代码的意思。如果你发现错误的注释，修改或删除它们。</p>
-<h2 id="5、可视化工具"><a href="#5、可视化工具" class="headerlink" title="5、可视化工具"></a>5、可视化工具</h2><p>在新的代码库中使用语言代码分析工具。如：ObjectAid是一个极好的Java代码分析工具。这是 Eclipse IDE中的一个插件。你可以创建对象来协助类图，把java文件拉到类图中，就自动画出类图。</p>
-<h2 id="6、设置断点"><a href="#6、设置断点" class="headerlink" title="6、设置断点"></a>6、设置断点</h2><p>使用调试器，设置一些断点并运行查看。这是第一次学习新的代码基础。</p>
-<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>上述的分析过程采用自上而下的方法，能够更好的帮助开发者学习新的代码库。</p>
-
+<h1 id="Java-8日期-时间API设计原则"><a href="#Java-8日期-时间API设计原则" class="headerlink" title="Java 8日期/时间API设计原则"></a>Java 8日期/时间API设计原则</h1><p>1、不变性：新的日期/时间API中，所有的类都是不可变的，这对多线程环境有好处。<br>2、关注点分离：新的API将人可读的日期时间和机器时间（unix timestamp）明确分离，它为日期（Date）、时间（Time）、日期时间（DateTime）、时间戳（unix timestamp）以及时区定义了不同的类。<br>3、清晰：在所有的类中，方法都被明确定义用以完成相同的行为。举个例子，要拿到当前实例我们可以使用now()方法，在所有的类中都定义了format()和parse()方法，而不是像以前那样专门有一个独立的类。为了更好的处理问题，所有的类都使用了工厂模式和策略模式，一旦你使用了其中某个类的方法，与其他类协同工作并不困难。<br>4、实用操作：所有新的日期/时间API类都实现了一系列方法用以完成通用的任务，如：加、减、格式化、解析、从日期/时间中提取单独部分，等等。<br>5、可扩展性：新的日期/时间API是工作在ISO-8601日历系统上的，但我们也可以将其应用在非IOS的日历上。</p>
+<h1 id="Java日期-时间API包"><a href="#Java日期-时间API包" class="headerlink" title="Java日期/时间API包"></a>Java日期/时间API包</h1><p>Java日期/时间API包含以下相应的包。<br>1、java.time包：这是新的Java日期/时间API的基础包，所有的主要基础类都是这个包的一部分，如：LocalDate, LocalTime, LocalDateTime, Instant, Period, Duration等等。所有这些类都是不可变的和线程安全的，在绝大多数情况下，这些类能够有效地处理一些公共的需求。<br>2、java.time.chrono包：这个包为非ISO的日历系统定义了一些泛化的API，我们可以扩展AbstractChronology类来创建自己的日历系统。<br>3、java.time.format包：这个包包含能够格式化和解析日期时间对象的类，在绝大多数情况下，我们不应该直接使用它们，因为java.time包中相应的类已经提供了格式化和解析的方法。<br>4、java.time.temporal包：这个包包含一些时态对象，我们可以用其找出关于日期/时间对象的某个特定日期或时间，比如说，可以找到某月的第一天或最后一天。你可以非常容易地认出这些方法，因为它们都具有“withXXX”的格式。<br>5、java.time.zone包：这个包包含支持不同时区以及相关规则的类。</p>
+<h1 id="Java日期-时间API示例"><a href="#Java日期-时间API示例" class="headerlink" title="Java日期/时间API示例"></a>Java日期/时间API示例</h1><h2 id="如何在java8中获取当天的日期"><a href="#如何在java8中获取当天的日期" class="headerlink" title="如何在java8中获取当天的日期"></a>如何在java8中获取当天的日期</h2><p>java8中有个叫LocalDate的类，能用来表示今天的日期。这个类与java.util.Date略有不同，因为它只包含日期，没有时间。</p>
+<pre><code>LocalDate today = LocalDate.now();
+--
+2017-09-19
+</code></pre><h2 id="如何在java8中获取当前的年月日"><a href="#如何在java8中获取当前的年月日" class="headerlink" title="如何在java8中获取当前的年月日"></a>如何在java8中获取当前的年月日</h2><p>LocalDate类中提供了一些很方便的方法可以用来提取年月日以及其他的日期属性,特别方便，只需要使用对应的getter方法就可以了，非常直观。</p>
+<pre><code>LocalDate today = LocalDate.now();
+int year = today.getYear();
+int month = today.getMonthValue();
+int day = today.getDayOfMonth();
+System.out.println(year);
+System.out.println(month);
+System.out.println(day);
+</code></pre><h2 id="在java8中如何获取某个特定的日期"><a href="#在java8中如何获取某个特定的日期" class="headerlink" title="在java8中如何获取某个特定的日期"></a>在java8中如何获取某个特定的日期</h2><p>通过另一个方法，可以创建出任意一个日期，它接受年月日的参数，然后返回一个等价的LocalDate实例。在这个方法里，需要的日期你填写什么就是什么，不想之前的API中月份必须从0开始。</p>
+<pre><code>LocalDate birthDay = LocalDate.of(2001, 1, 1);
+System.out.println(birthDay);
+</code></pre><h2 id="在java8中检查两个日期是否相等"><a href="#在java8中检查两个日期是否相等" class="headerlink" title="在java8中检查两个日期是否相等"></a>在java8中检查两个日期是否相等</h2><p>LocalDate重写了equals方法来进行日期的比较。</p>
+<pre><code>LocalDate todayEq = LocalDate.of(2017,9,19);
+System.out.println(todayEq.equals(today));
+</code></pre><h2 id="在java8中如何检查重复事件，比如生日"><a href="#在java8中如何检查重复事件，比如生日" class="headerlink" title="在java8中如何检查重复事件，比如生日"></a>在java8中如何检查重复事件，比如生日</h2><p>在java中还有一个与时间日期相关的任务就是检查重复事件，比如每月的账单日<br>如何在java中判断是否是某个节日或者重复事件，使用MonthDay类。这个类由月日组合，不包含年信息，可以用来代表每年重复出现的一些日期或其他组合。他和新的日期库中的其他类一样也都是不可变且线程安全的，并且它还是一个值类（value class）。</p>
+<pre><code>MonthDay birth_Day = MonthDay.of(9,19);
+MonthDay to_Day = MonthDay.from(today);
+if(birth_Day.equals(to_Day)) {
+    System.out.println(&quot;今天是你的生日&quot;);
+}else {
+    System.out.println(&quot;今天不是你的生日&quot;);
+}
+</code></pre><h2 id="如何在java8中获取当前时间"><a href="#如何在java8中获取当前时间" class="headerlink" title="如何在java8中获取当前时间"></a>如何在java8中获取当前时间</h2><p>这个与第一个例子获取当前日期非常相似，这里用的是LocalTime类，默认的格式是hh:mm:ss:nnn    </p>
+<pre><code>LocalTime now = LocalTime.now();
+System.out.println(now);
+---
+17:42:53.966
+</code></pre><h2 id="如何增加时间里面的小时数"><a href="#如何增加时间里面的小时数" class="headerlink" title="如何增加时间里面的小时数"></a>如何增加时间里面的小时数</h2><p>很多时候需要对时间进行操作，比如加一个小时来计算之后的时间，java8提供了更方便的方法 如plusHours，这些方法返回的是一个新的LocalTime实例的引用，因为LocalTime是不可变的。</p>
+<pre><code>LocalTime now = LocalTime.now();
+System.out.println(&quot;当前时间：&quot; + now);
+LocalTime two = now.plusHours(2);
+System.out.println(&quot;2小时后的时间：&quot; + two);
+---
+当前时间：17:45:12.091
+2小时后的时间：19:45:12.091
+</code></pre><h2 id="在java8中使用时钟"><a href="#在java8中使用时钟" class="headerlink" title="在java8中使用时钟"></a>在java8中使用时钟</h2><p>java8自带了Clock类，可以用来获取某个时区下（所以对时区是敏感的）当前的瞬时时间、日期。用来代替System.currentTimelnMillis()与TimeZone.getDefault()方法。</p>
+<pre><code>Clock clock = Clock.systemUTC();
+System.out.println(clock);
+--
+SystemClock[Z]
+</code></pre><h2 id="在java中如何判断某个日期在另一个日期的前面还是后面"><a href="#在java中如何判断某个日期在另一个日期的前面还是后面" class="headerlink" title="在java中如何判断某个日期在另一个日期的前面还是后面"></a>在java中如何判断某个日期在另一个日期的前面还是后面</h2><p>如何判断某个日期在另一个日期的前面还是后面或者相等，在java8中，LocalDate类中使用isBefore()、isAfter()、equals()方法来比较两个日期。如果调用方法的那个日期比给定的日期要早的话，isBefore()方法会返回true。equals()方法在前面的例子中已经说明了。</p>
+<pre><code>LocalTime now = LocalTime.now();
+System.out.println(&quot;当前时间：&quot; + now);
+LocalTime two = now.plusHours(2);
+System.out.println(&quot;2小时后的时间：&quot; + two);
+System.out.println(now.isBefore(two));
+---
+当前时间：17:49:21.295
+2小时后的时间：19:49:21.295
+true
+</code></pre><h2 id="在java8中处理不同的时区"><a href="#在java8中处理不同的时区" class="headerlink" title="在java8中处理不同的时区"></a>在java8中处理不同的时区</h2><p>java8中不仅将日期和时间进行了分离，同时还有时区。比如ZonId代表的是某个特定时区，ZonedDateTime代表带时区的时间，等同于以前的GregorianCalendar类。使用该类，可以将本地时间转换成另一个时区中的对应时间。</p>
+<pre><code>LocalDateTime localDateTime = LocalDateTime.now();
+ZoneId zone = ZoneId.of(ZoneId.SHORT_IDS.get(&quot;ACT&quot;));
+ZonedDateTime zdt = ZonedDateTime.of(localDateTime, zone);
+System.out.println(&quot;特定时区时间为：&quot; + zdt);
+---
+特定时区时间为：2017-09-19T17:59:10.288+09:30[Australia/Darwin]
+</code></pre><h2 id="如何表示固定的日期，比如信用卡过期时间"><a href="#如何表示固定的日期，比如信用卡过期时间" class="headerlink" title="如何表示固定的日期，比如信用卡过期时间"></a>如何表示固定的日期，比如信用卡过期时间</h2><p>正如MonthDay表示的是某个重复出现的日子，YearMonth是另外一个组合，代表的是像信用卡还款日，定期存款到期日，options到期日这类的日期。你可以用这个类找出这个月有多少天，LengthOfMonth()这个方法返回的是这个YearMonth实例有多少天，这对于检查2月是否润2月很有用。</p>
+<pre><code>YearMonth currentYearMonth = YearMonth.now();
+System.out.printf(&quot;这个月的是%s有%d天&quot;,currentYearMonth,currentYearMonth.lengthOfMonth());
+System.out.println( &quot;currentYearMonth.atEndOfMonth()：&quot; + currentYearMonth.atEndOfMonth());
+YearMonth creditCartExpiry = YearMonth.of(2018, Month.OCTOBER);
+System.out.printf(&quot;你选择的年月日期是%s %n &quot;,creditCartExpiry);
+---
+这个月的是2017-09有30天
+currentYearMonth.atEndOfMonth()：2017-09-30
+你选择的年月日期是2018-10 
+</code></pre><h2 id="如何在java8中检查闰年"><a href="#如何在java8中检查闰年" class="headerlink" title="如何在java8中检查闰年"></a>如何在java8中检查闰年</h2><p>LocalDate类由一个isLeapYear()方法来返回当前LocalDate对应的那年是否是闰年。</p>
+<pre><code>LocalDate today = LocalDate.now();
+System.out.println(today.isLeapYear());
+---
+ false
+</code></pre><h2 id="计算两个日期之间包含多少天，多少月"><a href="#计算两个日期之间包含多少天，多少月" class="headerlink" title="计算两个日期之间包含多少天，多少月"></a>计算两个日期之间包含多少天，多少月</h2><p>计算两个日期之间包含多少天、周、月、年。可以用java.time.Period类完成该功能。下面例子中将计算日期与将来的日期之间一共有几个月。</p>
+<pre><code>LocalDate today = LocalDate.now();
+LocalDate date1 = LocalDate.of(2017, Month.JULY, 12);
+Period period= Period.between(today, date1);
+System.out.println(period.getDays());
+System.out.println(period.getMonths());
+---
+-7
+-2
+</code></pre><h2 id="在java8中获取当前时间戳"><a href="#在java8中获取当前时间戳" class="headerlink" title="在java8中获取当前时间戳"></a>在java8中获取当前时间戳</h2><p>java8获取时间戳特别简单。Instant类由一个静态的工厂方法now()可以返回当前时间戳</p>
+<pre><code>Instant it = Instant.now();
+System.out.println(it);
+</code></pre><p>可以看到，当前时间戳是包含日期和时间的，与java.util.Date很类似，事实上Instant就是java8以前的Date，可以使用这个两个类中的方法在这两个类型之间进行转换，比如Date.from(Instant)就是用来把Instant转换成java.util.date的，而Date。toInstant()就是将Date转换成Instant的</p>
+<h2 id="如何在java8中使用预定义的格式器来对日期进行解析-格式化"><a href="#如何在java8中使用预定义的格式器来对日期进行解析-格式化" class="headerlink" title="如何在java8中使用预定义的格式器来对日期进行解析/格式化"></a>如何在java8中使用预定义的格式器来对日期进行解析/格式化</h2><p>在java8之前，时间日期的格式化非常麻烦，经常使用SimpleDateFormat来进行格式化，但是SimpleDateFormat并不是线程安全的。在java8中，引入了一个全新的线程安全的日期与时间格式器。并且预定义好了格式。比如，本例中使用的BASICISODATE格式会将20160414格式化成2016-04-14</p>
+<pre><code>String day = &quot;20130923&quot;;
+LocalDate formatterd = LocalDate.parse(day, DateTimeFormatter.BASIC_ISO_DATE);
+System.out.println(formatterd);
+---
+2013-09-23
+</code></pre><h2 id="如何在java中使用自定义的格式器来解析日期"><a href="#如何在java中使用自定义的格式器来解析日期" class="headerlink" title="如何在java中使用自定义的格式器来解析日期"></a>如何在java中使用自定义的格式器来解析日期</h2><p> 在上例中，我们使用了预置的时间日期格式器来解析日期字符串了，但是有时预置的不能满足的时候就需要我们自定义日期格式器了，下面的例子中的日期格式是”MM dd yyyy”.你可以给DateTimeFormatter的ofPattern静态方法()传入任何的模式，它会返回一个实例，这个模式的字面量与前例中是相同的。比如M代表月，m仍代表分，无效的模式会抛异常DateTimeParseException。</p>
+<pre><code> String day1 = &quot;2013 09 23&quot;;
+try {
+    DateTimeFormatter df = DateTimeFormatter.ofPattern(&quot;yyyy MM dd&quot;);
+    LocalDate holiday = LocalDate.parse(day1,df);
+    System.out.println(holiday);
+} catch (DateTimeParseException e) {
+    // TODO: handle exception
+}
+---
+2013-09-23
+</code></pre><h2 id="如何在java8中对日期进行格式化，转换成字符串"><a href="#如何在java8中对日期进行格式化，转换成字符串" class="headerlink" title="如何在java8中对日期进行格式化，转换成字符串"></a>如何在java8中对日期进行格式化，转换成字符串</h2><p> 前面的两个例子中，我们主要是对日期字符串来进行解析转换成日期，在这个例子我们相反，是把日期转换成字符。这里我们有个LocalDateTime类的实例，我们要把他转换成一个格式化好的日期串，与前例相同的是，我们仍需要制定模式串去创建一个DateTimeFormatter类的实例，但调用的是LocalDate.format()。这个方法会返回一个代表当前日期的字符串，对应的模式就是传入的DateTimeFormatter实例中定义好的。</p>
+<pre><code> LocalDateTime aDate = LocalDateTime.now();
+try {
+    DateTimeFormatter df = DateTimeFormatter.ofPattern(&quot;yyyy MM dd&quot;);
+    System.out.println(aDate.format(df));
+} catch (Exception e) {
+    // TODO: handle exception
+}
+---
+2017 09 19
+</code></pre>
       
     </div>
 
@@ -492,7 +628,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://github.com/efbiz/2017/09/09/轻松学习新代码库的六个步骤/" title="轻松学习新代码库的六个步骤">https://github.com/efbiz/2017/09/09/轻松学习新代码库的六个步骤/</a>
+      <a href="https://github.com/efbiz/2017/09/19/Java8-日期-时间（Date-Time）API指南/" title="Java8 日期/时间（Date Time）API指南">https://github.com/efbiz/2017/09/19/Java8-日期-时间（Date-Time）API指南/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -508,7 +644,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/源码学习-架构师之路/" rel="tag"># 源码学习 架构师之路</a>
+            <a href="/tags/Java8-日期-时间工具类/" rel="tag"># Java8 日期/时间工具类</a>
           
         </div>
       
@@ -521,8 +657,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/15/分布式定时任务方案技术选型/" rel="next" title="分布式定时任务调度系统技术选型">
-                <i class="fa fa-chevron-left"></i> 分布式定时任务调度系统技术选型
+              <a href="/2017/09/09/轻松学习新代码库的六个步骤/" rel="next" title="轻松学习新代码库的六个步骤">
+                <i class="fa fa-chevron-left"></i> 轻松学习新代码库的六个步骤
               </a>
             
           </div>
@@ -530,10 +666,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/19/Java8-日期-时间（Date-Time）API指南/" rel="prev" title="Java8 日期/时间（Date Time）API指南">
-                Java8 日期/时间（Date Time）API指南 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -702,7 +834,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤一：创建业务词汇表单"><span class="nav-number">1.</span> <span class="nav-text">步骤一：创建业务词汇表单</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤二：了解应用程序"><span class="nav-number">2.</span> <span class="nav-text">步骤二：了解应用程序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤三：浏览有效的类库文档"><span class="nav-number">3.</span> <span class="nav-text">步骤三：浏览有效的类库文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤四：做假设"><span class="nav-number">4.</span> <span class="nav-text">步骤四：做假设</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤-五：定位第三方库文件"><span class="nav-number">5.</span> <span class="nav-text">步骤 五：定位第三方库文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤六：分析代码"><span class="nav-number">6.</span> <span class="nav-text">步骤六：分析代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、目录以及文件架构"><span class="nav-number">6.1.</span> <span class="nav-text">1、目录以及文件架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、功能文件的映射"><span class="nav-number">6.2.</span> <span class="nav-text">2、功能文件的映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、单元测试"><span class="nav-number">6.3.</span> <span class="nav-text">3、单元测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、注释"><span class="nav-number">6.4.</span> <span class="nav-text">4、注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、可视化工具"><span class="nav-number">6.5.</span> <span class="nav-text">5、可视化工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、设置断点"><span class="nav-number">6.6.</span> <span class="nav-text">6、设置断点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结论"><span class="nav-number">7.</span> <span class="nav-text">结论</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么我们需要新的Java日期-时间API？"><span class="nav-number">1.</span> <span class="nav-text">为什么我们需要新的Java日期/时间API？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-8日期-时间API设计原则"><span class="nav-number">2.</span> <span class="nav-text">Java 8日期/时间API设计原则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java日期-时间API包"><span class="nav-number">3.</span> <span class="nav-text">Java日期/时间API包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java日期-时间API示例"><span class="nav-number">4.</span> <span class="nav-text">Java日期/时间API示例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何在java8中获取当天的日期"><span class="nav-number">4.1.</span> <span class="nav-text">如何在java8中获取当天的日期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何在java8中获取当前的年月日"><span class="nav-number">4.2.</span> <span class="nav-text">如何在java8中获取当前的年月日</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在java8中如何获取某个特定的日期"><span class="nav-number">4.3.</span> <span class="nav-text">在java8中如何获取某个特定的日期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在java8中检查两个日期是否相等"><span class="nav-number">4.4.</span> <span class="nav-text">在java8中检查两个日期是否相等</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在java8中如何检查重复事件，比如生日"><span class="nav-number">4.5.</span> <span class="nav-text">在java8中如何检查重复事件，比如生日</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何在java8中获取当前时间"><span class="nav-number">4.6.</span> <span class="nav-text">如何在java8中获取当前时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何增加时间里面的小时数"><span class="nav-number">4.7.</span> <span class="nav-text">如何增加时间里面的小时数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在java8中使用时钟"><span class="nav-number">4.8.</span> <span class="nav-text">在java8中使用时钟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在java中如何判断某个日期在另一个日期的前面还是后面"><span class="nav-number">4.9.</span> <span class="nav-text">在java中如何判断某个日期在另一个日期的前面还是后面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在java8中处理不同的时区"><span class="nav-number">4.10.</span> <span class="nav-text">在java8中处理不同的时区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何表示固定的日期，比如信用卡过期时间"><span class="nav-number">4.11.</span> <span class="nav-text">如何表示固定的日期，比如信用卡过期时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何在java8中检查闰年"><span class="nav-number">4.12.</span> <span class="nav-text">如何在java8中检查闰年</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算两个日期之间包含多少天，多少月"><span class="nav-number">4.13.</span> <span class="nav-text">计算两个日期之间包含多少天，多少月</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在java8中获取当前时间戳"><span class="nav-number">4.14.</span> <span class="nav-text">在java8中获取当前时间戳</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何在java8中使用预定义的格式器来对日期进行解析-格式化"><span class="nav-number">4.15.</span> <span class="nav-text">如何在java8中使用预定义的格式器来对日期进行解析/格式化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何在java中使用自定义的格式器来解析日期"><span class="nav-number">4.16.</span> <span class="nav-text">如何在java中使用自定义的格式器来解析日期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何在java8中对日期进行格式化，转换成字符串"><span class="nav-number">4.17.</span> <span class="nav-text">如何在java8中对日期进行格式化，转换成字符串</span></a></li></ol></li></ol></div>
             
 
           </div>
