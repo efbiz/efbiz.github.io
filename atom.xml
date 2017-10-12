@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/efbiz/"/>
-  <updated>2017-09-20T03:42:35.006Z</updated>
+  <updated>2017-10-12T13:40:13.478Z</updated>
   <id>https://github.com/efbiz/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设计模式-微服务-网关模式</title>
+    <link href="https://github.com/efbiz/2017/10/12/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%BE%AE%E6%9C%8D%E5%8A%A1-%E7%BD%91%E5%85%B3%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://github.com/efbiz/2017/10/12/设计模式-微服务-网关模式/</id>
+    <published>2017-10-12T13:14:20.000Z</published>
+    <updated>2017-10-12T13:40:13.478Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>API网关是一个服务器，它是系统中的单个入口点，用户对API网关进行单一呼叫，然后API网关调用每个相关的微服务器。它类似于面向对象设计的Facade模式。API网关封装内部系统架构，并提供针对每个客户端定制的API。它可能还有其他的责任，如身份验证，监控，负载平衡，缓存，请求整形和管理，以及静态响应处理。<br><a id="more"></a></p>
+<h1 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h1><p>使用API​​网关的主要优点是它封装了应用程序的内部结构。客户只需与网关进行通话，而不必调用特定的服务。API网关为每种类型的客户端提供了特定的API。这减少了客户端和应用程序之间的往返次数。它还简化了客户端代码。</p>
+<p>API网关也有一些缺点。它是另一个高度可用的组件，必须开发，部署和管理。还有一个风险是API网关成为开发瓶颈。开发人员必须更新API网关以暴露每个微服务端点。重要的是更新API网关的过程尽可能轻。否则，开发人员将被迫排队等待更新网关。尽管存在这些缺点，但是对于大多数现实世界的应用来说，使用API​​网关是合理的。</p>
+<h1 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h1><p><img src="api-gateway.png" alt=""> </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;p&gt;API网关是一个服务器，它是系统中的单个入口点，用户对API网关进行单一呼叫，然后API网关调用每个相关的微服务器。它类似于面向对象设计的Facade模式。API网关封装内部系统架构，并提供针对每个客户端定制的API。它可能还有其他的责任，如身份验证，监控，负载平衡，缓存，请求整形和管理，以及静态响应处理。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="设计模式" scheme="https://github.com/efbiz/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="微服务" scheme="https://github.com/efbiz/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+      <category term="网关" scheme="https://github.com/efbiz/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%BE%AE%E6%9C%8D%E5%8A%A1/%E7%BD%91%E5%85%B3/"/>
+    
+    
+      <category term="微服务" scheme="https://github.com/efbiz/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
+    
+      <category term="设计模式" scheme="https://github.com/efbiz/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="网关" scheme="https://github.com/efbiz/tags/%E7%BD%91%E5%85%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>Java 8 中的 Streams API 详解</title>
