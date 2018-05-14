@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="敏捷,Scrum,敏捷教练和 ScrumMaster,用户故事精要," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="EFbiz" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="本节课程我们主要解决三个问题：为什么要有用户故事？用户故事是什么，它们具有哪些属性、内涵和特征？在产品开发的全流程中怎么使用用户故事？">
+<meta name="keywords" content="敏捷,Scrum,敏捷教练和 ScrumMaster,用户故事精要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="敏捷教练第03课储备-用户故事精要">
+<meta property="og:url" content="https://github.com/efbiz/2018/05/14/敏捷教练第03课-储备-用户故事精要/index.html">
+<meta property="og:site_name" content="EFbiz">
+<meta property="og:description" content="本节课程我们主要解决三个问题：为什么要有用户故事？用户故事是什么，它们具有哪些属性、内涵和特征？在产品开发的全流程中怎么使用用户故事？">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/14/敏捷教练第03课-储备-用户故事精要/产品交付流程图.png">
+<meta property="og:updated_time" content="2018-05-14T13:06:17.064Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="敏捷教练第03课储备-用户故事精要">
+<meta name="twitter:description" content="本节课程我们主要解决三个问题：为什么要有用户故事？用户故事是什么，它们具有哪些属性、内涵和特征？在产品开发的全流程中怎么使用用户故事？">
+<meta name="twitter:image" content="https://github.com/efbiz/2018/05/14/敏捷教练第03课-储备-用户故事精要/产品交付流程图.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":true,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/efbiz/2018/05/14/敏捷教练第03课-储备-用户故事精要/"/>
+
+
+
+
+
+  <title>敏捷教练第03课储备-用户故事精要 | EFbiz</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">EFbiz</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Everything For business</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/efbiz/2018/05/14/敏捷教练第03课-储备-用户故事精要/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="joni@efbiz.org">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EFbiz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">敏捷教练第03课储备-用户故事精要</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-14T20:26:22+08:00">
+                2018-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/敏捷Scrum/" itemprop="url" rel="index">
+                    <span itemprop="name">敏捷Scrum</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/敏捷Scrum/敏捷教练和-ScrumMaster/" itemprop="url" rel="index">
+                    <span itemprop="name">敏捷教练和 ScrumMaster</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/05/14/敏捷教练第03课-储备-用户故事精要/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/05/14/敏捷教练第03课-储备-用户故事精要/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  4,516
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  15
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本节课程我们主要解决三个问题：为什么要有用户故事？用户故事是什么，它们具有哪些属性、内涵和特征？在产品开发的全流程中怎么使用用户故事？<br><a id="more"></a></p>
+<h1 id="理解用户故事"><a href="#理解用户故事" class="headerlink" title="理解用户故事"></a>理解用户故事</h1><p>理解用户故事，从两个问题开始。</p>
+<p>用户想要达到的目标是什么？</p>
+<ul>
+<li>达到这个目标的成本是多少？</li>
+<li>为了回答这两个问题，我们需要把大目标分解为小目标，排优先级和估算。</li>
+</ul>
+<p>用户故事是这个过程中使用的基本单元载体。比用户故事大或者模糊的可以叫做史诗，主题或者只是一个产品点子。</p>
+<p>关于上面两个根本问题，“@左耳朵”有很好的描述：</p>
+<blockquote>
+<p>亚马逊里挑战产品和运营的方法论是 T-shirt Size Estimation。就是用 T 恤的尺寸来做评估。你要做这个东西可以，但是产品和运营必须得拿出证据说明你要做的这个东西是什么样尺寸的。</p>
+<p>比如说 XXL 可以带来一百万人民币或一百万用户受益，XL 就是 50 万，L 是 25 万，这样砍下去，然后这些需求给到技术团队，这边技术团队也会做个评估。XXL 是要六个月做完，XL 是三个月，L 是一个月，M 是两周，S 是一周。这样两边一对。如果说业务影响力比较高，而且技术实施比较轻，这就是小而美，那就是最高优先级；如果是反过来，技术这边要花好大的力气，业务影响力又不是特别高，那就坚定不移地把它砍掉；如果两个都是中等，那就是自由行事；如果两个都是 XXL 的话，那能不能需求这边降低一个维度。比如将 XXL 降到 XL，我这边可以降好几个档次，两三个星期就可以实现出来，这样可能会是一个比较好的方式。</p>
+</blockquote>
+<h2 id="产品愿景是用户故事的统摄"><a href="#产品愿景是用户故事的统摄" class="headerlink" title="产品愿景是用户故事的统摄"></a>产品愿景是用户故事的统摄</h2><p>产品愿景要回答三个问题：</p>
+<ul>
+<li>Who：它的用户是谁？</li>
+<li>What：它是什么？一是要有清晰的画面感，二是与已有产品不同。</li>
+<li>Why：它意味着什么？有什么价值和目的？</li>
+</ul>
+<p>两个产品愿景的例子：</p>
+<ul>
+<li>我们要在10年的时间里，把一个人送到月亮上，还要让他回来。</li>
+<li>把1000首歌装在口袋里。</li>
+</ul>
+<p>产品愿景可以从最初的一个点子开始，慢慢打磨成熟。而在产品愿景打磨的过程中，把大而模糊的点子敲碎成清晰而可执行的小块，就是用户故事。产品愿景与用户故事同生同长，用户故事全部做完了，产品愿景就实现了。</p>
+<h2 id="用户建模，是用户故事的起点"><a href="#用户建模，是用户故事的起点" class="headerlink" title="用户建模，是用户故事的起点"></a>用户建模，是用户故事的起点</h2><p>用户建模可以考虑用户的两点：</p>
+<ul>
+<li>Pain 痛点：用户在产品目标领域目前有什么痛点？</li>
+<li>Gain 收益点：我们的产品能给用户带来什么收益？</li>
+</ul>
+<p>用户角色建模，要以用户为中心。建模的 BSCR 步骤：</p>
+<ul>
+<li>Brainstorm：产品探索团队头脑风暴出用户角色。</li>
+<li>Sort：对头脑风暴出的用户角色快速分组和识别层级。</li>
+<li>Consolidate：对每一角色逐一讨论，整合角色。</li>
+<li>Refine：提炼角色。识别用户角色的：</li>
+</ul>
+<p>用户角色分组可以考虑用户的：</p>
+<ul>
+<li>使用频次</li>
+<li>领域知识</li>
+<li>IT 知识</li>
+<li>使用目标</li>
+</ul>
+<p>用户建模的其他技术：</p>
+<ul>
+<li>典型用户画像。针对一种角色，虚构出一个人物，描述他的行为特征，使用场景，核心诉求。还可以给出画像。打印出来放在团队可见的地方，让团队在开发产品时对用户的需求能感同身受。</li>
+<li>极端用户。想象一个极端用户会有什么诉求，以产生新的灵感。这方面不用太用力。</li>
+</ul>
+<h2 id="用户故事"><a href="#用户故事" class="headerlink" title="用户故事"></a>用户故事</h2><h3 id="用户故事是从用户的角度描述功能。"><a href="#用户故事是从用户的角度描述功能。" class="headerlink" title="用户故事是从用户的角度描述功能。"></a>用户故事是从用户的角度描述功能。</h3><p>用户故事的 WWW 及格式</p>
+<ul>
+<li>Who：谁要使用这个功能？</li>
+<li>What：需要完成什么样的功能？</li>
+<li>Why：这个功能带来的价值是什么？</li>
+</ul>
+<p>用户故事的格式</p>
+<ul>
+<li>英文：As &lt; a user &gt; ，I want &lt; to do something &gt;， so that &lt; I can achieve some purpose &gt;.</li>
+<li>中文：作为 &lt; 一个用户 &gt;，我想要 &lt; 做什么 &gt;，以便 &lt; 达成什么目的 &gt;。</li>
+</ul>
+<p>例子：</p>
+<p>作为一个求职者，我想要发布简历，以便用人单位找到我。</p>
+<p>现存世界上第一张用户故事卡，from @张克强。</p>
+<h3 id="用户故事的-AC（Acceptance-Criteria）验收标准"><a href="#用户故事的-AC（Acceptance-Criteria）验收标准" class="headerlink" title="用户故事的 AC（Acceptance Criteria）验收标准"></a>用户故事的 AC（Acceptance Criteria）验收标准</h3><ul>
+<li>验收标准也是迭代结束时 Demo 的标准</li>
+<li>更多代表外部质量</li>
+<li>简洁与完备之间平衡</li>
+<li>包含成功路径和失败路径</li>
+</ul>
+<p>对前述故事的验收标准例子：</p>
+<ul>
+<li>我想要发布 Word 简历</li>
+<li>我想要发布 PDF 简历</li>
+<li>发前能预览</li>
+<li>发后能检查</li>
+<li>可以设置公开或私密状态</li>
+<li>失败有原因提示</li>
+</ul>
+<h3 id="搜集故事的方式"><a href="#搜集故事的方式" class="headerlink" title="搜集故事的方式"></a>搜集故事的方式</h3><ul>
+<li>用户访谈：不设定立场，问开放式问题和背景无关问题。</li>
+<li>问卷调查：问卷可简单直接，比如了解用户使用软件功能的频率。</li>
+<li>直接观察用户如何使用产品。</li>
+<li>产品探索团队使用故事编写工作坊，头脑风暴，输出简单原型和用户故事。</li>
+</ul>
+<h3 id="用户故事的一些重要特征"><a href="#用户故事的一些重要特征" class="headerlink" title="用户故事的一些重要特征"></a>用户故事的一些重要特征</h3><ul>
+<li>一目了然格式一致的表达。</li>
+<li>用户故事有两个部分：描述部分和验收标准。描述部分的常用格式是：As &lt;用户&gt;，I want &lt;功能&gt;，so that &lt;目的&gt;。验收标准可以有多条，常用的格式是：Given &lt;前提条件&gt;，When &lt;动作&gt;，Then &lt;结果&gt;。</li>
+<li>鼓励推迟细节，只需有足够的信息以使项目前行。<br>我们不需要一次性把项目的所有需求搞清楚，我们只需要在迭代之前把一个迭代要做的事搞清楚即可，而以用户故事作为基本单元，可以支持这种开发模式。</li>
+<li>用户故事以合适的颗粒度，方便理解，方便排优先级，保证重要的事先做。随着时间的推移，不重要的事也许就不需要了。</li>
+<li>用户故事鼓励通过交谈了解细节。强调对话而不是书面沟通。</li>
+<li>用户故事的验收标准保证成果可以被审核验证。</li>
+<li>以用户故事为载体，促进结构化沟通，使谈话有落地点。</li>
+<li>从业务角度描述，可以同时被业务人员和开发人员理解。</li>
+<li>用户故事的大小适合估算和做计划。颗粒度适合迭代开发。</li>
+<li>支持随机应变的开发，检视和适应。</li>
+<li>鼓励各方参与交流，传播隐性知识。</li>
+</ul>
+<h3 id="用户故事的-3C，鼓励通过交谈了解细节"><a href="#用户故事的-3C，鼓励通过交谈了解细节" class="headerlink" title="用户故事的 3C，鼓励通过交谈了解细节"></a>用户故事的 3C，鼓励通过交谈了解细节</h3><ul>
+<li><p>Card 卡片：用户故事通常写在卡片上，描述用户想要达到的目标，突出对用户有价值。</p>
+</li>
+<li><p>Conversation 对话：书面文档是一种低带宽沟通，表达信息的能力受限，接受信息的体验受限，信息传递能力受限。面对面交流是高宽带沟通，利用检验，适应和反馈促进沟通的有效性。用户故事模式鼓励对话。无形的对话为有形的卡片补充细节。</p>
+</li>
+<li><p>Confirmation 验收标准：无形的对话再次落实到有形的验收标准，并成为故事的一部分。</p>
+</li>
+</ul>
+<h3 id="排优先级要考虑的要素"><a href="#排优先级要考虑的要素" class="headerlink" title="排优先级要考虑的要素"></a>排优先级要考虑的要素</h3><ul>
+<li>大部分用户对该功能的渴望程度。</li>
+<li>少部分重要用户对该功能的渴望程度。</li>
+<li>故事之间的关系，是否有开发的先后顺序。</li>
+<li>技术实现的难度。</li>
+<li>成本高低。</li>
+</ul>
+<h3 id="关于优先级的两个模型"><a href="#关于优先级的两个模型" class="headerlink" title="关于优先级的两个模型"></a>关于优先级的两个模型</h3><ul>
+<li><p>MoSCoW 莫斯科定律：Must have 必须有；Should have 要有；Could have 可以有；Woudn’t have 不会有。</p>
+</li>
+<li><p>Kano 模型：没有不行的功能，线性功能，尖叫功能。</p>
+</li>
+</ul>
+<h3 id="用户故事的-INVEST-准则"><a href="#用户故事的-INVEST-准则" class="headerlink" title="用户故事的 INVEST 准则"></a>用户故事的 INVEST 准则</h3><ul>
+<li><p>Independent：用户故事之间是独立的。如果不独立，可能是划分的方法有问题，可重新划分。</p>
+</li>
+<li><p>Negotiable：用户故事是可讨论的。使用卡片是为了提醒对话。讨论的细节会变成测试。</p>
+</li>
+<li><p>Valuable：用户故事对用户有价值。有条件的话，让用户写或确认用户故事。</p>
+</li>
+<li><p>Estimatable：用户故事是可估算的。不可估算的原因可能是：缺乏领域知识（多与客户讨论，学习对方的语言，了解对方的想法，事实往往比想象的简单），缺乏技术知识（可以把故事分为两部分：探针实验 spike，和实际开发），故事太大(分拆)。</p>
+</li>
+<li><p>Size appropriately：大小适中。故事的合适大小取决于团队，容量和使用的技术。</p>
+</li>
+</ul>
+<p>需要分割的故事，可能是复合故事（按 CRUD 分拆），或复杂故事（可以分探针实验 spike 和实际开发两个故事，与其他故事一起排排优先级，然后在不同的迭代完成探针实验 spike 和实际开发）。需要合并的故事，包括若干小 bug，或小改动。</p>
+<ul>
+<li>Testable：用户故事是可测试的。故事的描述需使用具体的量化的描述，而不是绝对的含糊的描述。</li>
+</ul>
+<p>其中有价值和可估算是第一级标准，对应着本文开始时提到的产品开发所要回答的两个根本问题。另外四个标准更多是为了方便迭代开发。</p>
+<h3 id="用户故事的一些其他原则"><a href="#用户故事的一些其他原则" class="headerlink" title="用户故事的一些其他原则"></a>用户故事的一些其他原则</h3><ul>
+<li>从目标开始，大目标分解成小目标。</li>
+<li>切蛋糕式划分故事，竖切而不是横切。</li>
+<li>故事的描述要封闭，有完成感。故事针对一个场景，一个画面，一次完整的动作。</li>
+<li>约束也可以作为一个故事。</li>
+<li>故事的冰山法则：近期要开发的要划分的细而清晰，远期开发的可粗而模糊。</li>
+<li>文档也可以作为故事。</li>
+<li>故事中要包含用户角色，一个故事只包含一种用户。</li>
+<li>为了表述简单，故事使用主动语态。</li>
+<li>有可能的话，让用户编写故事。</li>
+<li>故事不用编号。可提炼出作为标识的关键词以方便讨论时引用。</li>
+<li>一定不要忘记故事的意图。</li>
+<li>避免镀金，开发不需要的功能。团队公开透明的工作方式可以帮助这一点。</li>
+<li>非功能需求可以作为故事。</li>
+<li>缺陷可以作为故事。</li>
+</ul>
+<h3 id="故事分级"><a href="#故事分级" class="headerlink" title="故事分级"></a>故事分级</h3><ul>
+<li>Epic 史诗：一个很大的故事。</li>
+<li>Theme 主题：安放一组类似故事的篮子。</li>
+<li>Story 故事：业务角度。</li>
+<li>Task 任务：技术角度，一个故事可分解为多个任务。</li>
+</ul>
+<h3 id="用户故事分解"><a href="#用户故事分解" class="headerlink" title="用户故事分解"></a>用户故事分解</h3><p>大故事拆成小故事，9种不同切分方法。</p>
+<ul>
+<li><p>按工作流程步骤切分<br>是否可以先完成工作流程的头尾部分，再添加中间步骤去完善该故事呢？</p>
+</li>
+<li><p>按操作切分<br>是否可以把不同操作切分成独立的故事呢？（比如是有关“管理”或“配置”某物）</p>
+</li>
+<li><p>按不同业务规则切分<br>是否可以先完成业务规则的一个子集，后续再添加其他规则呢？（比如故事中有没有范围型词语像是“灵活的日期”来暗示着多种变化呢？）</p>
+</li>
+<li><p>按不同类型数据切分<br>是否可以先处理一种类型的数据，后续再处理其他类型的数据呢？</p>
+</li>
+<li><p>按实现先后依赖切分<br>该故事的实现背后是否依赖另一个流程的数据输入？</p>
+</li>
+<li><p>按照体验质量切分<br>是否可以先完成一个低体验质量的故事，然后再提高体验水平？</p>
+</li>
+<li><p>按不同界面切分<br>是否能先简化复杂界面，先完成一个简单版本？如果多个界面获取相同类型数据，是否可以先从一个界面处理数据，后续再增添其他界面呢？</p>
+</li>
+<li><p>按简单/复杂切分<br>如果简单的核心就能提供大部分价值，是否可以先完成简单核心，再通过后续的故事来扩充它呢？</p>
+</li>
+<li><p>延迟性能优化<br>是否可以先使其工作，后续再满足非功能性需求呢？（当复杂主要来自非功能性需求时）</p>
+</li>
+</ul>
+<h3 id="绝对估算与相对估算"><a href="#绝对估算与相对估算" class="headerlink" title="绝对估算与相对估算"></a>绝对估算与相对估算</h3><p>绝对估算：按天或小时。</p>
+<p>相对估算：</p>
+<ul>
+<li>按倍增数列：1，2，4，8，16，32，64</li>
+<li>按斐波那契数列：1，2，3，5，8，13，20，40，100</li>
+<li>按T恤衫尺寸：XS，S，M，L，XL</li>
+</ul>
+<h3 id="估算纸牌"><a href="#估算纸牌" class="headerlink" title="估算纸牌"></a>估算纸牌</h3><ul>
+<li>产品负责人讲一个故事</li>
+<li>团队提问澄清</li>
+<li>团队成员独立出牌估算，互不干扰，喊统一翻牌时才翻牌</li>
+<li>出到最小点数和最大点数的人讲讲话</li>
+<li>其他人可参与对话</li>
+<li>第二轮出牌</li>
+<li>对同一个故事不超过三轮出牌</li>
+</ul>
+<h2 id="客户参与、产品探索和产品交付的全流程"><a href="#客户参与、产品探索和产品交付的全流程" class="headerlink" title="客户参与、产品探索和产品交付的全流程"></a>客户参与、产品探索和产品交付的全流程</h2><p><img src="产品交付流程图.png" alt=""> </p>
+<h3 id="第一，产品负责人收集需求。利用前文讲到的客户团队和需求收集方法。需求来自客户和干系人，也来自产品负责人的思考。需求以业务角度为主，也考虑技术角度。需产品负责人与技术领域的架构师等密切协作完成需求的梳理。"><a href="#第一，产品负责人收集需求。利用前文讲到的客户团队和需求收集方法。需求来自客户和干系人，也来自产品负责人的思考。需求以业务角度为主，也考虑技术角度。需产品负责人与技术领域的架构师等密切协作完成需求的梳理。" class="headerlink" title="第一，产品负责人收集需求。利用前文讲到的客户团队和需求收集方法。需求来自客户和干系人，也来自产品负责人的思考。需求以业务角度为主，也考虑技术角度。需产品负责人与技术领域的架构师等密切协作完成需求的梳理。"></a>第一，产品负责人收集需求。利用前文讲到的客户团队和需求收集方法。需求来自客户和干系人，也来自产品负责人的思考。需求以业务角度为主，也考虑技术角度。需产品负责人与技术领域的架构师等密切协作完成需求的梳理。</h3><h3 id="第二，产品探索团队利用故事写作研讨会对用户建模，编写用户故事，放入待办列表，排序，估算，制定发布计划。"><a href="#第二，产品探索团队利用故事写作研讨会对用户建模，编写用户故事，放入待办列表，排序，估算，制定发布计划。" class="headerlink" title="第二，产品探索团队利用故事写作研讨会对用户建模，编写用户故事，放入待办列表，排序，估算，制定发布计划。"></a>第二，产品探索团队利用故事写作研讨会对用户建模，编写用户故事，放入待办列表，排序，估算，制定发布计划。</h3><p>好的故事估算方法</p>
+<ul>
+<li>允许团队随着对产品了解的加深随时改变想法。</li>
+<li>要能适用于史诗和小故事。 估算精度随故事变大而变小。</li>
+<li>估算快速。</li>
+<li>能帮助提供进度和剩余工作的有用信息。</li>
+<li>要能做到不精确也没事。</li>
+<li>可以用来制定发布计划。</li>
+<li>团队集体估算。</li>
+<li>故事估算的单位可采用故事点或者理想天。</li>
+</ul>
+<p>具体的估算方法</p>
+<ul>
+<li>产品负责人拿起一个故事，进行讲解，团队成员提问澄清。</li>
+<li>团队成员用斐波那契序列的纸牌出牌估算，出到点数最大和最小的人说明，其他人可参与讨论。独立出牌估算，翻牌前不要把估算讲出来，也不要受他人估算的影响。</li>
+<li>大多数故事的估算会在一到两轮出牌后收敛。最多也不要超过三轮出牌。</li>
+<li>还可用冒泡分桶法进行快速估算。把故事按从小到大从左到友排成一排，从冒泡法排到大家都认可为止。然后分组分到不同的桶里。桶的大小排列也是斐波那契序列。</li>
+<li>每个迭代能完成的故事点数是速率。速率是一个靠谱的指标的依据是：故事的估算值与实际大小的偏差呈正态分布。每个迭代选取的故事的正负偏移可以彼此抵消。因此故事估算的精度不会影响速率指标的可靠性。速率指标可靠的前提是：在项目过程中始终采用一致化的估算方法，迭代之间的故事没有交叉重叠，项目过程中没有发生影响速率的大的异常。</li>
+</ul>
+<p>速率和估算的几个注意事项</p>
+<ul>
+<li>不要拿速率来比团队。</li>
+<li>分解后小故事估算的总合不一定等于大故事的估算。</li>
+<li>任务工时的总和不需要跟故事点成正比。</li>
+<li>结对编程不影响对故事的估算方法。</li>
+<li>做到一半的故事不能计入速率。没有完全完成的事情是不靠谱的。鼓励一件流。迭代完成后不要修订速率。</li>
+<li>发布计划的制定</li>
+<li>选定迭代长度。</li>
+<li>预测速率。</li>
+<li>产品的总故事点除以速率，即得出需要多少个迭代完成。</li>
+</ul>
+<p>速率预测可采用</p>
+<ul>
+<li>历史值</li>
+<li>执行一轮看看速率是多少</li>
+<li>猜测</li>
+</ul>
+<p>可视化发布计划的方法</p>
+<ul>
+<li>墙</li>
+<li>电子表格</li>
+<li>甘特图</li>
+</ul>
+<h3 id="第三，与客户确认发布计划。"><a href="#第三，与客户确认发布计划。" class="headerlink" title="第三，与客户确认发布计划。"></a>第三，与客户确认发布计划。</h3><h3 id="第四，与交付团队梳理故事，达到准备好的状态（DoR-Definition-of-Ready）。故事要有清晰的验收标准，优先级和估算。团队成员有充分的理解。"><a href="#第四，与交付团队梳理故事，达到准备好的状态（DoR-Definition-of-Ready）。故事要有清晰的验收标准，优先级和估算。团队成员有充分的理解。" class="headerlink" title="第四，与交付团队梳理故事，达到准备好的状态（DoR - Definition of Ready）。故事要有清晰的验收标准，优先级和估算。团队成员有充分的理解。"></a>第四，与交付团队梳理故事，达到准备好的状态（DoR - Definition of Ready）。故事要有清晰的验收标准，优先级和估算。团队成员有充分的理解。</h3><h3 id="第五，迭代计划，分解任务，生成迭代待办列表。"><a href="#第五，迭代计划，分解任务，生成迭代待办列表。" class="headerlink" title="第五，迭代计划，分解任务，生成迭代待办列表。"></a>第五，迭代计划，分解任务，生成迭代待办列表。</h3><ul>
+<li>在迭代计划会上</li>
+<li>选取本迭代要完成的故事。</li>
+<li>把业务故事分解为技术任务。分解也是做设计。不能技能的人员可以在同一个故事中合作。</li>
+<li>团队做出承诺。</li>
+</ul>
+<h3 id="第六，每日工作，按故事和任务的优先级执行。"><a href="#第六，每日工作，按故事和任务的优先级执行。" class="headerlink" title="第六，每日工作，按故事和任务的优先级执行。"></a>第六，每日工作，按故事和任务的优先级执行。</h3><ul>
+<li>测量和监控速率的方法</li>
+<li>迭代故事点燃尽图。</li>
+<li>迭代工时燃机图。</li>
+<li>每迭代计划速率和实际速率趋势图。</li>
+<li>每迭代计划和实际速率累计图。</li>
+</ul>
+<p>这些图表只是团队监测趋势的工具。团队要在每天的工作中检视和适应以保证能达到完成迭代目标的趋势。</p>
+<h3 id="第七，迭代验收和演示。最好能有客户参与，以获得反馈。"><a href="#第七，迭代验收和演示。最好能有客户参与，以获得反馈。" class="headerlink" title="第七，迭代验收和演示。最好能有客户参与，以获得反馈。"></a>第七，迭代验收和演示。最好能有客户参与，以获得反馈。</h3><p>在 Scrum 中，用户故事运转在两条轨道上。一条是产品级别的产品列表精化，既帮助产品的长远规划，也为迭代的开始做好准备。另一条是迭代级别，故事经过精化准备好之后，经由迭代计划会进入迭代，经由每一天的检查与适应，在迭代评审会议上展现为产品增量和可工作的软件，在经过迭代回顾会议探讨下一个迭代如何做得更好。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>用心创作和收集好文章，您的支持将鼓励我继续！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.jpg" alt="joni@efbiz.org WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="joni@efbiz.org Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      joni@efbiz.org
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://github.com/efbiz/2018/05/14/敏捷教练第03课-储备-用户故事精要/" title="敏捷教练第03课储备-用户故事精要">https://github.com/efbiz/2018/05/14/敏捷教练第03课-储备-用户故事精要/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/敏捷/" rel="tag"># 敏捷</a>
+          
+            <a href="/tags/Scrum/" rel="tag"># Scrum</a>
+          
+            <a href="/tags/敏捷教练和-ScrumMaster/" rel="tag"># 敏捷教练和 ScrumMaster</a>
+          
+            <a href="/tags/用户故事精要/" rel="tag"># 用户故事精要</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/14/敏捷教练第02课-储备Scrum 精要/" rel="next" title="敏捷教练第02课-储备-Scrum 精要">
+                <i class="fa fa-chevron-left"></i> 敏捷教练第02课-储备-Scrum 精要
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/14/敏捷教练第04课-储备-Scrum 的20个子模 式/" rel="prev" title="敏捷教练第04课：储备-scrum的20个子模式">
+                敏捷教练第04课：储备-scrum的20个子模式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="joni@efbiz.org" />
+          <p class="site-author-name" itemprop="name">joni@efbiz.org</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://git.oschina.net/efbiz/" target="_blank" title="Oschina">
+                  
+                  Oschina
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/efbiz" target="_blank" title="GitHub">
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/efbiz" target="_blank" title="豆瓣">
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/efbiz" target="_blank" title="知乎">
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#理解用户故事"><span class="nav-number">1.</span> <span class="nav-text">理解用户故事</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#产品愿景是用户故事的统摄"><span class="nav-number">1.1.</span> <span class="nav-text">产品愿景是用户故事的统摄</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户建模，是用户故事的起点"><span class="nav-number">1.2.</span> <span class="nav-text">用户建模，是用户故事的起点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户故事"><span class="nav-number">1.3.</span> <span class="nav-text">用户故事</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用户故事是从用户的角度描述功能。"><span class="nav-number">1.3.1.</span> <span class="nav-text">用户故事是从用户的角度描述功能。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户故事的-AC（Acceptance-Criteria）验收标准"><span class="nav-number">1.3.2.</span> <span class="nav-text">用户故事的 AC（Acceptance Criteria）验收标准</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜集故事的方式"><span class="nav-number">1.3.3.</span> <span class="nav-text">搜集故事的方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户故事的一些重要特征"><span class="nav-number">1.3.4.</span> <span class="nav-text">用户故事的一些重要特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户故事的-3C，鼓励通过交谈了解细节"><span class="nav-number">1.3.5.</span> <span class="nav-text">用户故事的 3C，鼓励通过交谈了解细节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排优先级要考虑的要素"><span class="nav-number">1.3.6.</span> <span class="nav-text">排优先级要考虑的要素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于优先级的两个模型"><span class="nav-number">1.3.7.</span> <span class="nav-text">关于优先级的两个模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户故事的-INVEST-准则"><span class="nav-number">1.3.8.</span> <span class="nav-text">用户故事的 INVEST 准则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户故事的一些其他原则"><span class="nav-number">1.3.9.</span> <span class="nav-text">用户故事的一些其他原则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#故事分级"><span class="nav-number">1.3.10.</span> <span class="nav-text">故事分级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户故事分解"><span class="nav-number">1.3.11.</span> <span class="nav-text">用户故事分解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绝对估算与相对估算"><span class="nav-number">1.3.12.</span> <span class="nav-text">绝对估算与相对估算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#估算纸牌"><span class="nav-number">1.3.13.</span> <span class="nav-text">估算纸牌</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#客户参与、产品探索和产品交付的全流程"><span class="nav-number">1.4.</span> <span class="nav-text">客户参与、产品探索和产品交付的全流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一，产品负责人收集需求。利用前文讲到的客户团队和需求收集方法。需求来自客户和干系人，也来自产品负责人的思考。需求以业务角度为主，也考虑技术角度。需产品负责人与技术领域的架构师等密切协作完成需求的梳理。"><span class="nav-number">1.4.1.</span> <span class="nav-text">第一，产品负责人收集需求。利用前文讲到的客户团队和需求收集方法。需求来自客户和干系人，也来自产品负责人的思考。需求以业务角度为主，也考虑技术角度。需产品负责人与技术领域的架构师等密切协作完成需求的梳理。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二，产品探索团队利用故事写作研讨会对用户建模，编写用户故事，放入待办列表，排序，估算，制定发布计划。"><span class="nav-number">1.4.2.</span> <span class="nav-text">第二，产品探索团队利用故事写作研讨会对用户建模，编写用户故事，放入待办列表，排序，估算，制定发布计划。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三，与客户确认发布计划。"><span class="nav-number">1.4.3.</span> <span class="nav-text">第三，与客户确认发布计划。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四，与交付团队梳理故事，达到准备好的状态（DoR-Definition-of-Ready）。故事要有清晰的验收标准，优先级和估算。团队成员有充分的理解。"><span class="nav-number">1.4.4.</span> <span class="nav-text">第四，与交付团队梳理故事，达到准备好的状态（DoR - Definition of Ready）。故事要有清晰的验收标准，优先级和估算。团队成员有充分的理解。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五，迭代计划，分解任务，生成迭代待办列表。"><span class="nav-number">1.4.5.</span> <span class="nav-text">第五，迭代计划，分解任务，生成迭代待办列表。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第六，每日工作，按故事和任务的优先级执行。"><span class="nav-number">1.4.6.</span> <span class="nav-text">第六，每日工作，按故事和任务的优先级执行。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七，迭代验收和演示。最好能有客户参与，以获得反馈。"><span class="nav-number">1.4.7.</span> <span class="nav-text">第七，迭代验收和演示。最好能有客户参与，以获得反馈。</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">joni@efbiz.org</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">全站共41.2k字</span>
+</div>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+        
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyt8q81Tz';
+      var conf = 'f4d6f5e35dcd359f030389f32b29a357';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.1"></script>
+
+
+  
+
+</body>
+</html>
