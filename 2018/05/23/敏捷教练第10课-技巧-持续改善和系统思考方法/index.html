@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="敏捷,Scrum,敏捷教练和 ScrumMaster,持续改善和系统思考方法," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="EFbiz" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="是什么让一个团队与另一个团队有所不同？是什么使得一个团队在敏捷教练离开后仍能保持提升？答案是一个团队内建的持续改善与系统思考能力，特别是 Scrum Master。一个具备持续改善和系统思考能力的 Scrum Master，就已经不是只顶着这个角色的 Scrum Master，而已经是个敏捷教练了。这与外在的角色和职位名称无关。 本文按以下这个大循环介绍持续改善与系统思考方法：  思想准备：组织的">
+<meta name="keywords" content="敏捷,Scrum,敏捷教练和 ScrumMaster,持续改善和系统思考方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="敏捷教练第10课-技巧-持续改善和系统思考方法">
+<meta property="og:url" content="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/index.html">
+<meta property="og:site_name" content="EFbiz">
+<meta property="og:description" content="是什么让一个团队与另一个团队有所不同？是什么使得一个团队在敏捷教练离开后仍能保持提升？答案是一个团队内建的持续改善与系统思考能力，特别是 Scrum Master。一个具备持续改善和系统思考能力的 Scrum Master，就已经不是只顶着这个角色的 Scrum Master，而已经是个敏捷教练了。这与外在的角色和职位名称无关。 本文按以下这个大循环介绍持续改善与系统思考方法：  思想准备：组织的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/持续改善和系统思考方法.jpg">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/思想准备.jpg">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/现场现物.jpg">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/不断实践.jpg">
+<meta property="og:updated_time" content="2018-05-23T08:53:35.901Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="敏捷教练第10课-技巧-持续改善和系统思考方法">
+<meta name="twitter:description" content="是什么让一个团队与另一个团队有所不同？是什么使得一个团队在敏捷教练离开后仍能保持提升？答案是一个团队内建的持续改善与系统思考能力，特别是 Scrum Master。一个具备持续改善和系统思考能力的 Scrum Master，就已经不是只顶着这个角色的 Scrum Master，而已经是个敏捷教练了。这与外在的角色和职位名称无关。 本文按以下这个大循环介绍持续改善与系统思考方法：  思想准备：组织的">
+<meta name="twitter:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/持续改善和系统思考方法.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":true,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/"/>
+
+
+
+
+
+  <title>敏捷教练第10课-技巧-持续改善和系统思考方法 | EFbiz</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">EFbiz</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Everything For business</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="joni@efbiz.org">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EFbiz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">敏捷教练第10课-技巧-持续改善和系统思考方法</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T16:27:28+08:00">
+                2018-05-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/敏捷Scrum/" itemprop="url" rel="index">
+                    <span itemprop="name">敏捷Scrum</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/敏捷Scrum/敏捷教练和-ScrumMaster/" itemprop="url" rel="index">
+                    <span itemprop="name">敏捷教练和 ScrumMaster</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  3,443
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  12
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>是什么让一个团队与另一个团队有所不同？是什么使得一个团队在敏捷教练离开后仍能保持提升？答案是一个团队内建的持续改善与系统思考能力，特别是 Scrum Master。一个具备持续改善和系统思考能力的 Scrum Master，就已经不是只顶着这个角色的 Scrum Master，而已经是个敏捷教练了。这与外在的角色和职位名称无关。</p>
+<p>本文按以下这个大循环介绍持续改善与系统思考方法：</p>
+<ul>
+<li>思想准备：组织的常青，教练的使命，敏捷的逻辑，工作生活的四层逻辑，追求高绩效</li>
+<li>技能准备：敏捷宣言，Scrum 框架，精益思想</li>
+<li>现场现物：GROW 模型-真实的问题，真实的目标，真实的方法</li>
+<li>识别问题：观察，交流</li>
+<li>解决问题：因果逻辑，PDCA，回顾会议</li>
+<li>固化成果：提炼和运用模式</li>
+<li>打磨逻辑，不断实践</li>
+</ul>
+<a id="more"></a>
+<p><img src="持续改善和系统思考方法.jpg" alt=""></p>
+<p>本文介绍的思想会落实到下一章典型敏捷教练周期六步法当中，是六步法背后的思想和逻辑依据。作为敏捷教练，需要不断做两件事：一是不断打磨逻辑，二是不断在实践中实证。这两点，也是本课程的灵魂，和敏捷教练技能未来发展的基调。</p>
+<h1 id="思想准备"><a href="#思想准备" class="headerlink" title="思想准备"></a>思想准备</h1><p><img src="思想准备.jpg" alt=""></p>
+<h2 id="组织的常青"><a href="#组织的常青" class="headerlink" title="组织的常青"></a>组织的常青</h2><p>在《基业常青》一书中，科林斯和波拉斯确定“高瞻远瞩”公司的标准是：处于所在行业中第一流的水准、广受企业人士崇敬、对世界有着不可磨灭的影响、已经历很多代的 CEO、已经历很多次产品生命周期且在1950年前创立。根据这六条标准，他们选出的公司有：美国运通公司、波音公司、花旗银行、沃尔玛、迪斯尼公司等共18家。</p>
+<p>这些常青公司有以下一些特质：</p>
+<ul>
+<li>“造钟，而不是报时”</li>
+</ul>
+<blockquote>
+<p>科林斯指出，“伟大的公司的创办人，通常都是制造时钟的人，而不是报时的人。他们主要致力于建立一个时钟，而不只是找对时机，用一种适销对路的产品打入市 场；他们并非致力于领袖人物充满魅力的人格特质，而是致力于构建高瞻远瞩的公司组织特质，他们最大的创造物是公司本身及其代表的一切。”“造钟”就是建立一种机制，使得公司能够依靠组织的力量在市场中生存与发展，而不必依靠某位个人、某种产品或某个机会等偶然的东西。随着市场的进一步完善与规范，企业必须 越来越依靠一个好的机制，包括好的组织结构、好的评价考核体系、好的战略管理等。</p>
+</blockquote>
+<ul>
+<li>“利润之上的追求”与“教派般的文化”</li>
+</ul>
+<blockquote>
+<p>所有伟大的公司都是“务实的理想主义者”。“利润是生存的必要条件，而且是达成更重要目的的手段，但对很多高瞻远瞩的公司而言，利润不是目的，利润就像人体需要的氧气、食物、水和血液一样，这些东西不是生命的目的。但是，没有它们，就没有生命。”利润之上的更高追求在伟大的公司里，更是被作为像“教派般的文化”那样所灌输。“利润之上的追求”如果不明确、不具体，就会是空洞的大口号。企业要意识到企业文化的重要作用，“教派般的文化”指的是卓越公司必须具有很强的共同价值观。</p>
+</blockquote>
+<ul>
+<li>“自家长成的经理人”</li>
+</ul>
+<blockquote>
+<p>“18家伟大的公司在总共长达1700年的历史中，只有四位 CEO 来自于外部”。“自家长成”的经理人熟悉了解本公司文化，更易带领本公司进行变革。 其实，任何一个公司无论长盛不衰还是昙花一现，都有意无意地由一种理念所指引。</p>
+</blockquote>
+<p>这三个特质，跟我们在前文数次提到的作为精益和敏捷鼻祖的丰田 4P 完全吻合。</p>
+<h2 id="教练的使命"><a href="#教练的使命" class="headerlink" title="教练的使命:"></a>教练的使命:</h2><p> 要成为一家高瞻远瞩的公司，需要有一个像丰田 4P 那样的体系。体系的落实，需要教练。在丰田，经理就是教练，教练是一种管理职责。在丰田之外，经理与教练分离。教练需要在一定范围内取得组织授权，以便履行教练的职责：</p>
+<ul>
+<li>贯彻敏捷的工作方式。</li>
+<li>打造被充分激励充分赋能的自组织团队。</li>
+<li><p>以此创造价值实现目标。</p>
+<h2 id="敏捷的逻辑"><a href="#敏捷的逻辑" class="headerlink" title="敏捷的逻辑:"></a>敏捷的逻辑:</h2></li>
+</ul>
+<ol>
+<li>按照敏捷思想，采用一种方法，比如 Scrum。最起码在团队中取得形式上的共识和一致。</li>
+<li>团队自组织。以敏捷思想为指导，通过共识机制，持续改善与解决问题。</li>
+<li>以前两者为基础，取得好的业务成果。同时个人获得职业生涯和工作生活上长期全面的好处。</li>
+</ol>
+<p>第1点相对直观，第2点的逻辑基础是：好公司。</p>
+<p> 在非理想状态下，重点可以放在第1点，对第2点做有限度的追求。不管环境如何，我们依然可以有所作为。好与坏不是非黑即白，而是同一频谱上的两个点。我们能做的，是施加一点好的影响。</p>
+<h2 id="好公司的标准"><a href="#好公司的标准" class="headerlink" title="好公司的标准"></a>好公司的标准</h2><ul>
+<li>员工有相对体面的收入和足够的激励。</li>
+<li>有相对公平平等透明的制度。努力与结果之间有清晰的影响关系。</li>
+<li>经理与员工之间互相扶助的关系。</li>
+<li>公司有前途，有奔头。</li>
+<li>员工技能提升与发展。</li>
+<li>有明确的努力方向。</li>
+<li>晋升加薪的机会。</li>
+<li>以员工为中心，员工有机会参与和影响公司管理。</li>
+<li>工作环境和制度人性化。尊重人。</li>
+<li>流程合理，不会有很多阻滞，办事不难。</li>
+<li><p>工作的稳定性和保障性。</p>
+<p>第1点和第2点的区别是，第1点是相对可以有形化和规定化，第2点需要大家的讨论和共识。没有共识，第1点也难以执行。而第2点也离不开敏捷思想的指导。自组织不是一个悬空的虚拟的概念的问题，而是一种持续改进的共识的共同的问题解决。自组织不是一种脱离内容的形式，而要以内容即工作组织和问题为出发点。</p>
+<p>在非理想情况下，打造自组织，可以采用的方法是，受限的共识，和受限的自组织，受限的好团队。不管环境多么恶劣，共识的空间是有的。共识与流动即知行合一。</p>
+<h2 id="团队的发展阶段"><a href="#团队的发展阶段" class="headerlink" title="团队的发展阶段"></a>团队的发展阶段</h2></li>
+<li><p>无组织（各自为政，效率低下）</p>
+</li>
+<li>被动的自运转（Scrum Master 驱动）</li>
+<li>自运转（自动按 Scrum 运作）</li>
+<li>受限的自组织（大环境不理想）</li>
+<li><p>自组织（基业长青）</p>
+<p>找到一些问题（如跨职能团队，价值流优化，团队工作），推动团队达到哪怕是不完美的共识，和不完美的执行。</p>
+<p>团队的三个角色之外，也要把经理纳入共识的范围。问题的解决不用那么急迫。因为没有共识，急迫也没有用。大环境之下，团队之间差异的原因，如团队的构成，团队的年资等，也是值得思考的点。以逻辑的甘露，在理念和团队事实上，有步骤地把一团意大利面拉直成拉面。</p>
+<h2 id="工作生活的四层逻辑"><a href="#工作生活的四层逻辑" class="headerlink" title="工作生活的四层逻辑"></a>工作生活的四层逻辑</h2></li>
+<li>生产力，其逻辑是技能。工作方式是否能辅助大家的技能提升呢？</li>
+<li>生产关系，其逻辑是交易。如何影响分配的规则呢？</li>
+<li>五伦之外，其逻辑是合作。如何找出大家共同追求的东西呢？</li>
+<li>五伦之内，其逻辑是爱。如何激发人的善意呢？</li>
+</ul>
+<p>不管环境多么恶劣，合作还是可以存在的。合作既是敏捷的基础，也是敏捷的核心。</p>
+<h2 id="追求高绩效"><a href="#追求高绩效" class="headerlink" title="追求高绩效"></a>追求高绩效</h2><p> 在一个组织中，大家有共同的目标，共同的规则，就可以追求高绩效了。</p>
+<p> 建立 One Team 的理念和实践。在一个团队中，可以就所有问题公开讨论，包括绩效管理，个人发展，技术，管理，业务，工作满意度，员工参与度等。</p>
+<p> 一个组织的形态，往往都是不够理想的。在这种情况下，我们心目中要有最终的理想，并根据情况，制定阶段性的理想。</p>
+<h2 id="技能准备"><a href="#技能准备" class="headerlink" title="技能准备"></a>技能准备</h2><p> 技能准备的部分在本课程的前面部分已经涵盖，总结下来，包括：</p>
+<ul>
+<li>敏捷宣言</li>
+<li>Scrum 框架</li>
+<li>精益思想</li>
+<li>技术实践</li>
+<li>教练方法</li>
+<li>自我提升</li>
+<li>对组织和团队发展阶段的认识</li>
+<li>本章的系统思考和持续改善</li>
+</ul>
+<p>有了思想和技能上的准备，就进入现场现物的了解问题。</p>
+<h1 id="现场现物"><a href="#现场现物" class="headerlink" title="现场现物"></a>现场现物</h1><p><img src="现场现物.jpg" alt=""></p>
+<h2 id="了解问题可采用-GROW-模型："><a href="#了解问题可采用-GROW-模型：" class="headerlink" title="了解问题可采用 GROW 模型："></a>了解问题可采用 GROW 模型：</h2><ul>
+<li>Goal 目标：组织和团队的目标是什么？是速度提升吗？是质量提升吗？干系人对目标的共识程度如何？</li>
+<li>Reality 现状：现状是什么？现在采用的工作方式是什么？实际运作是怎样的？实际运作中有些什么问题？</li>
+<li>Opportunity 机会：是否存在提升的机会？各方干系人的支持程度如何？有什么不可克服的障碍？提升之后对团队意味着什么？</li>
+<li>Way 方法：具体可采用哪种敏捷方法？是一步到位还是阶段性的？</li>
+</ul>
+<h3 id="要注意三个真实"><a href="#要注意三个真实" class="headerlink" title="要注意三个真实"></a>要注意三个真实</h3><p>真实的问题：亲自了解问题，而不是道听途说纸上谈兵。<br>真实的目标：各方共识的目标。<br>真实的方法：找到问题的根源再解决，而不只是一些形式上的措施，比如针对一个表象的问题搞一次形式上的培训。</p>
+<h2 id="识别问题"><a href="#识别问题" class="headerlink" title="识别问题"></a>识别问题</h2><p>识别问题的途径包括：</p>
+<ul>
+<li>观察：亲自去看团队的运作，特别是各种项目会议，日常交流，工作物件。有条件的话，可以看下团队实际的日常工作。</li>
+<li>交流：尽可能与所有团队成员和干系人一对一交流，了解他们观察到的现状，看法和建议。</li>
+</ul>
+<h1 id="解决问题："><a href="#解决问题：" class="headerlink" title="解决问题："></a>解决问题：</h1><p>解决问题可以采用的方法包括：</p>
+<ul>
+<li>因果逻辑：对问题要找到原因，从源头上解决。了解团队运作的系统动力。如果只是做一些表象上的规定，根本无法落实和执行。</li>
+<li>PDCA：解决问题要有完整的循环，包括识别问题分析问题设定目标分析根源制定对策的计划阶段，贯彻对策的执行阶段，评估效果的检查阶段，和标准化的调整阶段。</li>
+<li>回顾会议：利用群体智慧，解决问题。</li>
+</ul>
+<h1 id="固化成果"><a href="#固化成果" class="headerlink" title="固化成果"></a>固化成果</h1><p>从解决问题中学习，把解决问题的方法提炼成模式。</p>
+<p>在模式一章已经介绍了一些模式。再补充一些如下：</p>
+<ul>
+<li>在站会中，会观察到一些好模式，如细颗粒度的协作。当一位团队成员说他要启动一个任务，跟他的任务相关的其他团队成员会立即响应说他会同时启动那个相关的任务。把这种观察拿到回顾会议上讨论，让团队参与这种模式的提炼，并丰富细节，记录下来。因为模式是大家共同提炼的，可执行性更强。</li>
+<li>团队共同参与的庆祝成功也是一种模式。团队有共同的目标，经过努力，取得了值得一提的成功，大家就要庆祝一下。这种成功是属于大家的，并且成功能促进更多的未来成功。</li>
+<li>制度化客户反馈与产品想法的分享。产品负责人可以把向团队分享客户反馈和产品想法制度化，例如在产品列表精化会和迭代计划会分别固定一块时间拿来分享这类信息。目的是让团队更全面的了解客户，知道自己工作的意义。方式上可以打磨，产生一种花费时间最少又对所有人最有意义的形式。</li>
+</ul>
+<h1 id="打磨逻辑，不断实践"><a href="#打磨逻辑，不断实践" class="headerlink" title="打磨逻辑，不断实践"></a>打磨逻辑，不断实践</h1><p><img src="不断实践.jpg" alt=""></p>
+<p>系统思考和持续改善并不是什么高深的东西，最后总结如下：</p>
+<ul>
+<li>对于好的工作方式，心中要有标准，这个标准是我们追求的理想状态，也是问题的鉴别器。</li>
+<li>心中带着标准，去观察现状，去和干系人交流，了解真实的问题。</li>
+<li>制定改善目标和改善方案，并取得干系人的共识和支持。</li>
+<li>实施方案，评估效果。</li>
+<li>固化方法，固化成果。</li>
+<li>以迭代的方法重复上述步骤，以敏捷的方式做敏捷。</li>
+<li>逐步加深解决问题的深度。在解决问题的同时，深化共识和合作。</li>
+<li>始终不忘事件之间的因果逻辑，并持续躬身实践。</li>
+</ul>
+<p>唯晓成事之规律，方持不灭改善心。思考，就是想出事物当中的理所当然。改善，就是把理所当然的事做到极致。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>用心创作和收集好文章，您的支持将鼓励我继续！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.jpg" alt="joni@efbiz.org WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="joni@efbiz.org Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      joni@efbiz.org
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/" title="敏捷教练第10课-技巧-持续改善和系统思考方法">https://github.com/efbiz/2018/05/23/敏捷教练第10课-技巧-持续改善和系统思考方法/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/敏捷/" rel="tag"># 敏捷</a>
+          
+            <a href="/tags/Scrum/" rel="tag"># Scrum</a>
+          
+            <a href="/tags/敏捷教练和-ScrumMaster/" rel="tag"># 敏捷教练和 ScrumMaster</a>
+          
+            <a href="/tags/持续改善和系统思考方法/" rel="tag"># 持续改善和系统思考方法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/23/敏捷教练第09课-技巧-敏捷教练的提升三式/" rel="next" title="敏捷教练第09课-技巧-敏捷教练的提升三式">
+                <i class="fa fa-chevron-left"></i> 敏捷教练第09课-技巧-敏捷教练的提升三式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/23/敏捷教练第11课-实战-敏捷教练实战周期V形六步法/" rel="prev" title="敏捷教练第11课-实战-敏捷教练实战周期V形六步法">
+                敏捷教练第11课-实战-敏捷教练实战周期V形六步法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="joni@efbiz.org" />
+          <p class="site-author-name" itemprop="name">joni@efbiz.org</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://git.oschina.net/efbiz/" target="_blank" title="Oschina">
+                  
+                  Oschina
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/efbiz" target="_blank" title="GitHub">
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/efbiz" target="_blank" title="豆瓣">
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/efbiz" target="_blank" title="知乎">
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#思想准备"><span class="nav-number">1.</span> <span class="nav-text">思想准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#组织的常青"><span class="nav-number">1.1.</span> <span class="nav-text">组织的常青</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#教练的使命"><span class="nav-number">1.2.</span> <span class="nav-text">教练的使命:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#敏捷的逻辑"><span class="nav-number">1.3.</span> <span class="nav-text">敏捷的逻辑:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#好公司的标准"><span class="nav-number">1.4.</span> <span class="nav-text">好公司的标准</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#团队的发展阶段"><span class="nav-number">1.5.</span> <span class="nav-text">团队的发展阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作生活的四层逻辑"><span class="nav-number">1.6.</span> <span class="nav-text">工作生活的四层逻辑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#追求高绩效"><span class="nav-number">1.7.</span> <span class="nav-text">追求高绩效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技能准备"><span class="nav-number">1.8.</span> <span class="nav-text">技能准备</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#现场现物"><span class="nav-number">2.</span> <span class="nav-text">现场现物</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#了解问题可采用-GROW-模型："><span class="nav-number">2.1.</span> <span class="nav-text">了解问题可采用 GROW 模型：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#要注意三个真实"><span class="nav-number">2.1.1.</span> <span class="nav-text">要注意三个真实</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#识别问题"><span class="nav-number">2.2.</span> <span class="nav-text">识别问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决问题："><span class="nav-number">3.</span> <span class="nav-text">解决问题：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#固化成果"><span class="nav-number">4.</span> <span class="nav-text">固化成果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#打磨逻辑，不断实践"><span class="nav-number">5.</span> <span class="nav-text">打磨逻辑，不断实践</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">joni@efbiz.org</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">全站共78.0k字</span>
+</div>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+        
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyt8q81Tz';
+      var conf = 'f4d6f5e35dcd359f030389f32b29a357';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.1"></script>
+
+
+  
+
+</body>
+</html>

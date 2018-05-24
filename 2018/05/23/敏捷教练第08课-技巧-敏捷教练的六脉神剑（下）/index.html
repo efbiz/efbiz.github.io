@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="敏捷,Scrum,敏捷教练和 ScrumMaster,敏捷教练的六脉神剑," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="EFbiz" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="敏捷教练的六脉神剑针对敏捷团队的工作方式提供了六个不同的教练角度，前三剑针对的是更基本的场景，后三剑针对的是更特定的场景。敏捷教练需要对六个角度谙熟于胸，并针对不同的场景混合运用。大多数情况下，场景是可预测的，可以以六脉神剑为基础，制定自己的脚本和台词。在每一次的教练行为中，目的是第一位的，首先是确定目的，然后才是确定方法。除了每一次教练行为的设计，还要对团队完整工作周期的教练计划进行设计。敏捷基">
+<meta name="keywords" content="敏捷,Scrum,敏捷教练和 ScrumMaster,敏捷教练的六脉神剑">
+<meta property="og:type" content="article">
+<meta property="og:title" content="敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）">
+<meta property="og:url" content="https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/index.html">
+<meta property="og:site_name" content="EFbiz">
+<meta property="og:description" content="敏捷教练的六脉神剑针对敏捷团队的工作方式提供了六个不同的教练角度，前三剑针对的是更基本的场景，后三剑针对的是更特定的场景。敏捷教练需要对六个角度谙熟于胸，并针对不同的场景混合运用。大多数情况下，场景是可预测的，可以以六脉神剑为基础，制定自己的脚本和台词。在每一次的教练行为中，目的是第一位的，首先是确定目的，然后才是确定方法。除了每一次教练行为的设计，还要对团队完整工作周期的教练计划进行设计。敏捷基">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/六脉神剑.jpg">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/六脉神剑.jpg">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/协作指挥.jpg">
+<meta property="og:updated_time" content="2018-05-24T11:55:02.791Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）">
+<meta name="twitter:description" content="敏捷教练的六脉神剑针对敏捷团队的工作方式提供了六个不同的教练角度，前三剑针对的是更基本的场景，后三剑针对的是更特定的场景。敏捷教练需要对六个角度谙熟于胸，并针对不同的场景混合运用。大多数情况下，场景是可预测的，可以以六脉神剑为基础，制定自己的脚本和台词。在每一次的教练行为中，目的是第一位的，首先是确定目的，然后才是确定方法。除了每一次教练行为的设计，还要对团队完整工作周期的教练计划进行设计。敏捷基">
+<meta name="twitter:image" content="https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/六脉神剑.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":true,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/"/>
+
+
+
+
+
+  <title>敏捷教练第08课-技巧-敏捷教练的六脉神剑（下） | EFbiz</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">EFbiz</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Everything For business</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="joni@efbiz.org">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EFbiz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T15:34:08+08:00">
+                2018-05-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/敏捷Scrum/" itemprop="url" rel="index">
+                    <span itemprop="name">敏捷Scrum</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/敏捷Scrum/敏捷教练和-ScrumMaster/" itemprop="url" rel="index">
+                    <span itemprop="name">敏捷教练和 ScrumMaster</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  4,377
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  15
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>敏捷教练的六脉神剑针对敏捷团队的工作方式提供了六个不同的教练角度，前三剑针对的是更基本的场景，后三剑针对的是更特定的场景。敏捷教练需要对六个角度谙熟于胸，并针对不同的场景混合运用。大多数情况下，场景是可预测的，可以以六脉神剑为基础，制定自己的脚本和台词。在每一次的教练行为中，目的是第一位的，首先是确定目的，然后才是确定方法。除了每一次教练行为的设计，还要对团队完整工作周期的教练计划进行设计。敏捷基础与六脉神剑是设计的基石。</p>
+<a id="more"></a>
+<p><img src="六脉神剑.jpg" alt=""></p>
+<p>对六脉神剑还可以做另一角度的分类理解，即主动型和应对型。主动型即主动主导的行为，应对型即当一个情况发生时的应对行为。从这个角度看，指导、协助、讲授和协作指挥更多是主动型的行为，问题解决和冲突导航更多是应对型的行为。但主动的行为也可能是由场景触发，而应对的行为也需要有预案和主动探询。主动的行为更多是前馈，应对的行为更多是反馈。主动的行为更多发生在正式的仪式中，应对的行为则更多在日常随机发生。主动和应对都需要计划和练习。</p>
+<p>这一章的使用方法跟上一章的使用方法一样，提供的是凝聚了前人智慧的检查列表，可以作为我们大脑的扩展。使用时，首先是事先学习，设想在教练工作中可能遇到的场景，针对每一场景可以有什么样的预案。第二是，在每一活动前，根据这些检查列表，制定自己的剧本或脚本，以便在活动中使用。第三是事后回顾，在每一活动之后，再来阅读这些检查列表，什么事自己做得好，什么事还可以做得更好。经过反复演练这三步使用，把这些方法内化成自己的方法，并能进行扩展和创新。</p>
+<h1 id="第四剑：问题解决"><a href="#第四剑：问题解决" class="headerlink" title="第四剑：问题解决"></a>第四剑：问题解决</h1><p><img src="六脉神剑.jpg" alt=""></p>
+<h2 id="敏捷问题解决规则"><a href="#敏捷问题解决规则" class="headerlink" title="敏捷问题解决规则"></a>敏捷问题解决规则</h2><ul>
+<li>一个问题引起了你的注意，或者你觉察到了一个问题。这个问题可能来自观察，也可能来自团队的反馈。</li>
+<li>暂停一下，思考该问题，把问题看清楚。问题的真相和本质是什么。</li>
+<li>团队拥有对问题的最多理解，并且对问题的解决负有责任，教练的责任是协助团队，把团队纳入问题解决和变成问题解决者。</li>
+<li>允许团队应对解决或者不应对。解决问题以及是否制定计划和采取行动是团队的决定和承诺。</li>
+<li>传授解决问题的框架，让团队成为解决问题者，是教练的目的。</li>
+</ul>
+<h2 id="发现与寻找问题"><a href="#发现与寻找问题" class="headerlink" title="发现与寻找问题"></a>发现与寻找问题</h2><ul>
+<li>要抵制立即解决问题的诱惑。除非人的基本尊严受到侵犯，对于其他情况，并不需要立即处理。</li>
+<li>识别是否是真实的问题。不为虚拟的问题进行虚拟的讨论。</li>
+<li>流程层面的问题：我们在敏捷方面做得如何？可以采用敏捷成熟度或健康度检查列表，推荐 Mike Cohn 的敏捷成熟度模型和 Spotify 的敏捷健康度检查。成熟度或健康检查中，对问题的评估只是个触发，团队的对话才是最有价值的部分。</li>
+<li>质量和绩效问题：团队如何可以做得更好？通过制定完成的定义，并在每个计划会上完善，在每个评审会上检查，来持续提升质量。</li>
+<li>团队的动态问题：团队如何可以变成一个更好的团队？</li>
+</ul>
+<h3 id="扩展：团队动态问题之艾伦-布劳恩的团队动态调查"><a href="#扩展：团队动态问题之艾伦-布劳恩的团队动态调查" class="headerlink" title="扩展：团队动态问题之艾伦-布劳恩的团队动态调查"></a>扩展：团队动态问题之艾伦-布劳恩的团队动态调查</h3><ul>
+<li>在团队每天的交互中有多少幽默的成分？</li>
+<li>在出现困难和高压时，团队最初的行为是什么？</li>
+<li>团队成员出现抵触情绪有多么频繁？</li>
+<li>当团队成员有抵触情绪时，他们之间多久会进行一次充分的讨论？</li>
+<li>基于团队规范，在平常的交互中团队成员做出妥协有多频繁？</li>
+<li>任何一位团队成员向任何其他一位团队成员能提供什么样的反馈意见？</li>
+<li>任何一位团队成员向任何其他一位团队成员真正提出了什么样的反馈意见？</li>
+<li>一位团队成员与另一位团队成员讨论你的绩效和行为，而不是直接向你或者在第三方在场的情况下提供反馈意见，可能性有多大。</li>
+<li>就个人的职业目标而言，你从团队中得到了多大程度的支持？</li>
+<li>在处理一个工作问题时，需要承认有问题并需要请求团队成员帮助，这种情况有多少？</li>
+<li>当你向团队分享个人信息时，你感受到攻击的可能性有多大？</li>
+<li>当一个问题可能引发团队内部的冲突或争论时，团队有多大可能性把这个问题带到团队中讨论？</li>
+<li>当一个问题可能有很多个冲突点时，你有多大可能把这个问题带到团队中讨论？</li>
+<li>如果一个工作项可能引发很多不同的冲突，你把它带到了团队中，并且团队达成了可行的共识，这种可能性有多大？</li>
+<li>在过去两个工作日中，你能举一个例子说明你在团队中感受到温暖和包容吗？</li>
+<li>在过去两个工作日中，你能举一个例子说明你在团队中感受到被轻视或排斥吗？</li>
+<li>团队在多大程度上让你觉得你对自己的工作是负责的？</li>
+</ul>
+<h3 id="扩展：团队动态问题之-BART（边界、权力、角色、任务）分析"><a href="#扩展：团队动态问题之-BART（边界、权力、角色、任务）分析" class="headerlink" title="扩展：团队动态问题之 BART（边界、权力、角色、任务）分析"></a>扩展：团队动态问题之 BART（边界、权力、角色、任务）分析</h3><h4 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h4><ul>
+<li>在你的敏捷框架中，所有正式定义的角色都有人员各就其位吗？</li>
+<li>是否所有正式定义的角色都在角色边界之内运作良好？</li>
+<li>是否有人承担的正式角色多于一个？</li>
+<li>如果团队增加了额外的角色，这些角色的描述是否充分和清晰？</li>
+</ul>
+<h4 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h4><ul>
+<li>团队成员对于他们的团队目标是否清晰？</li>
+<li>是否有为了完成团队目标所需的所有不同任务？</li>
+<li>人们从先前相似的情况中引入了什么样的历史和过去的经验？</li>
+</ul>
+<h4 id="权力"><a href="#权力" class="headerlink" title="权力"></a>权力</h4><ul>
+<li>对于每一个角色，它的权力是否被清晰地制定，并被所有人理解和支持？</li>
+<li>团队成员是否在适当地行使权力？</li>
+</ul>
+<h4 id="边界"><a href="#边界" class="headerlink" title="边界"></a>边界</h4><ul>
+<li>人们是否在被赋予的敏捷角色的权力边界内工作？</li>
+<li>在迭代期间，团队成员如何赋予另一个团队成员获取任务的权力？</li>
+<li>在团队中各种各样势力的边界的什么？</li>
+</ul>
+<h2 id="清楚地看待与思考问题"><a href="#清楚地看待与思考问题" class="headerlink" title="清楚地看待与思考问题"></a>清楚地看待与思考问题</h2><ul>
+<li>留到第二天解决：让脑子放轻松，看看第二天起床的时候是否已经有了答案，也许一些更深入的事情或者重现敏捷本质的事情会出现。</li>
+<li>向自己提问：如果在这个世界上我可以做任何事情，这个事情是什么？这里的风险是什么？如果这个情况已经很好地解决了，解决后的情况会是什么样的？</li>
+<li>与另一位教练结队：从一位旁观者的角度得到建议，或者一些挑战性的问题。</li>
+<li>直奔源头：复习敏捷宣言及其背后的十二条原则。</li>
+</ul>
+<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><ul>
+<li>直接解决它：说出你看到的症状，抛出你的假设，询问团队，对于这个问题，他们想要做什么。</li>
+<li>重申敏捷的含义：例如，对于每个会议的目的和流程，重回 Scrum 指南。</li>
+<li>揭示体系本身：把团队比作一个生态体系而不是机器，通过观察和探究揭示这个系统本身，并向团队分享。</li>
+<li>善用回顾：让团队以不同的角度思考他们一起工作得如何。</li>
+<li>增加一种启示方法：例如，增加一面痛苦墙，让团队把遇到的痛苦记录下来。</li>
+</ul>
+<h1 id="第五剑：冲突领航"><a href="#第五剑：冲突领航" class="headerlink" title="第五剑：冲突领航"></a>第五剑：冲突领航</h1><h2 id="冲突中敏捷教练的角色"><a href="#冲突中敏捷教练的角色" class="headerlink" title="冲突中敏捷教练的角色"></a>冲突中敏捷教练的角色</h2><ul>
+<li>敏捷团队要长期在一起，冲突解决尤为重要。</li>
+<li>教练需要帮助团队排除冲突，提供解决冲突的方法、指南和框架。</li>
+<li>教练需认真决定是否要、何时及如何介入冲突管理。</li>
+</ul>
+<h2 id="冲突的五个级别："><a href="#冲突的五个级别：" class="headerlink" title="冲突的五个级别："></a>冲突的五个级别：</h2><ul>
+<li>第一级，解决问题。人们有不同的意见，也许误解已经出现，目标与价值的冲突也可能存在，并且团队对于这种冲突的氛围感到焦虑。在这一级里，团队关注问题解决，信息分享和协作流畅，语言是开放和基于事实的。</li>
+<li>第二级，争执。自我保护变得跟解决问题一样重要。团队成员之间产生距离感，壁垒在强化。个人保护胜过协作，语言是戒备的但允许解释。</li>
+<li>第三级，争辩。在第三级，目标就是赢得胜利。多个问题汇聚成更大的问题，在这个存在误解的环境中出现派系。问题和人成了同义词，人们已经不能只对事不对人。胜利重于解决，语言中包含个人攻击。</li>
+<li>第四级，圣战。人们相信，唯一的选择就是让对手退出。保护自己的族群成了焦点，语言呈现出意识形态的特征，而不是针对具体的问题和实事。</li>
+<li>第五级，世界大战。毁灭是这一级的战斗宣言，胜利已经不够了，对手必须输。很少或没有语言交流，唯一的目的是摧毁对方。</li>
+</ul>
+<h2 id="确定团队的冲突级别"><a href="#确定团队的冲突级别" class="headerlink" title="确定团队的冲突级别"></a>确定团队的冲突级别</h2><ul>
+<li>聆听抱怨：带着同情心去聆听，接受抱怨者所说的事情，让抱怨者知道你在关心他，并正在花时间了解冲突的方方面面。</li>
+<li>感受活力：大家是在充满活力地协作？还是彼此梳理漠视？团队的精气神是积极向上，还是消极冷漠？</li>
+<li>关注语言：通过大家说什么和如何说，判断团队的冲突级别。</li>
+</ul>
+<h3 id="扩展：冲突级别与语言"><a href="#扩展：冲突级别与语言" class="headerlink" title="扩展：冲突级别与语言"></a>扩展：冲突级别与语言</h3><ul>
+<li>第一级，团队成员开放且建设性地参与冲突。语言例如：我听到你说了，但我认为你忘记了一个事实；我知道你的想法，但我不同意，因为。。。</li>
+<li>第二级，对话变得偏于自我保护。语言例如：是的，我是弄坏了这个构建，但在我们团队中有比这更严重的问题。</li>
+<li>第三级，扭曲的语言出现了。例如：他们总是走捷径，他经常控制每一次对话。</li>
+<li>第四级，变得更加主观。例如：他们永远不会改变，我们是对的。</li>
+<li>第五级，充满了斗争。例如：要么是我们，要么是你们，我们必须赢。</li>
+</ul>
+<h2 id="应对冲突"><a href="#应对冲突" class="headerlink" title="应对冲突"></a>应对冲突</h2><ul>
+<li>首先，什么也不做。在决定干预之前，花一些时间观察团队的行为，看他们在处理冲突上是否有进步。</li>
+<li>分析和应对，考虑以下问题：冲突的级别是什么？问题是什么？作为 A 方，我该如何回应？作为 B 方，我该如何回应？有哪些分解冲突的选择？如果有什么我应该做的话，那会是什么？</li>
+<li>使用架构：使用敏捷的精髓如原则、价值观和角色定义来排除冲突。平衡任务导向和人际关系导向。</li>
+<li>揭示模型：揭示冲突层次模型，邀请团队加入对话，探讨如何降低冲突级别。</li>
+</ul>
+<h3 id="扩展：冲突应对模式"><a href="#扩展：冲突应对模式" class="headerlink" title="扩展：冲突应对模式"></a>扩展：冲突应对模式</h3><ul>
+<li>第一级，解决问题。协作寻求双赢，了解每位团队成员的想法，达成共识。</li>
+<li>第二级，争执。允许对方解决问题，任何事情以心理安全为基础。</li>
+<li>第三级，争辩。关系比问题本身更重要，先接受对方的观点。对于可以分解的问题，进行交涉。收集数据，建立事实。</li>
+<li>第四级，圣战。再次构建安全框架，居间传递想法，降低冲突级别。</li>
+<li>第五级，世界大战。做任何必要的事情防止大家受到伤害。</li>
+</ul>
+<h2 id="化解团队成员之间的抱怨"><a href="#化解团队成员之间的抱怨" class="headerlink" title="化解团队成员之间的抱怨"></a>化解团队成员之间的抱怨</h2><ul>
+<li>第一，建议抱怨者跟被抱怨者直接提及顾虑和感受。</li>
+<li>第二，跟抱怨者一起找被抱怨者交流。</li>
+<li>第三，征得同意，居间转告抱怨。</li>
+<li>如果这三招都不灵的话，最后一招是：不再把它作为一个问题。</li>
+</ul>
+<h2 id="面对无法解决的冲突"><a href="#面对无法解决的冲突" class="headerlink" title="面对无法解决的冲突"></a>面对无法解决的冲突</h2><ul>
+<li>敏捷团队是亲密的。增加团队成员之间的良性互动，而不是关注于解开并解决问题。优秀团队中积极交互与消极交互的比例是三比一到五比一。</li>
+<li>避免误解形成。团队学习聆听和互相关注。</li>
+<li>确认允诺和共识。确认所有的声音都被听到，并显式确认允诺和共识。</li>
+<li>利用共享愿景：尽管团队通常是由经理们创建并通告团队的，团队在一起也没什么共同梦想，但团队依然可以围绕产品和项目生成共同愿景。</li>
+</ul>
+<h2 id="关于冲突的最后招式"><a href="#关于冲突的最后招式" class="headerlink" title="关于冲突的最后招式"></a>关于冲突的最后招式</h2><ul>
+<li>了解冲突框架，选择应对方式，处理抱怨和增加团队的积极性，这些技术自身并不能解决冲突。</li>
+<li>只有这些技能和思维方式在团队的行动中得到体现时，神奇才会发生。</li>
+<li>保持对话的基础存在，冲突才有被解决的可能。</li>
+</ul>
+<h1 id="第六剑：协作指挥"><a href="#第六剑：协作指挥" class="headerlink" title="第六剑：协作指挥"></a>第六剑：协作指挥</h1><p><img src="协作指挥.jpg" alt=""></p>
+<h2 id="从合作到协作"><a href="#从合作到协作" class="headerlink" title="从合作到协作"></a>从合作到协作</h2><ul>
+<li>合作的效果是各个部分之和。而协作是整体大于个体之和。</li>
+<li>对于不需要创造性的活动，可以只合作不协作。</li>
+<li>协作是以合作为基础，但增加了产生创造性、突破性和意想不到结果的重要元素。</li>
+<li>在协作中，每个人都会在他人想法的基础上思考，敢于分享和评议，让那些更好的、个人无法独创的想法浮现。</li>
+<li>在协作之前先形成合作，每个人集中精力演奏好自己的乐器。</li>
+<li>教练作为协作指挥者，加入沉默的人员一方，消除高声音者的优势，鼓励每个人变得更自信。</li>
+<li>让团队通过不断练习，达到不需要指挥者的境界。</li>
+</ul>
+<h2 id="培养协作个体"><a href="#培养协作个体" class="headerlink" title="培养协作个体"></a>培养协作个体</h2><ul>
+<li>传授他们合作技巧：建立响应能力，沉默即暗示同意，运用否决权，寻找其它方案，反思有意识意图与无意识意图，带着同情心说出真相。</li>
+<li>引导他们提前准备：在协作活动时提前做好准备，例如，在每日站会时身心都准时到达。</li>
+<li>鼓励他们表现自我：培养自我价值，但排除虚荣心。</li>
+<li>建立协作态度：对自己的生活环境负责，而不是把责任推给他人；不设防，而不是有保留地进行响应；坦然响应，而不是在需要响应时感到威胁；尝试双赢，而不是防御；寻找解决方法，而不是泾渭分明反应强烈；劝说而不是责备；坚定而不是对抗；既考虑长期也考虑短期；对他人观点感兴趣；欢迎反馈；把冲突看成人类环境的天然成分；平静而直接地谈论艰难的问题；为自己的行为后果负责；持续寻求更深层次的理解；传达关切的态度；寻求卓越；聆听。</li>
+</ul>
+<h2 id="培养团队的协作肌肉"><a href="#培养团队的协作肌肉" class="headerlink" title="培养团队的协作肌肉"></a>培养团队的协作肌肉</h2><ul>
+<li>说出不能说的话：敢于暴露弱点，遇到困难时可以求助。</li>
+<li>建立而不是打压想法：对过失展示容忍，制止运用惩罚，讨论和接纳不同的观点产生合力。</li>
+<li>听所有的声音：提升安静的成员并抑制占优势的成员。</li>
+<li>培养协作中的亲密关系：团队成员能够感知其他人对新素材的理解程度，迅速介入澄清，使团队级别的理解更快地达成。</li>
+<li>一起认真做游戏：例如计划纸牌。</li>
+<li>不断提醒他们直到会用。</li>
+</ul>
+<h2 id="揭示协作的真谛"><a href="#揭示协作的真谛" class="headerlink" title="揭示协作的真谛"></a>揭示协作的真谛</h2><ul>
+<li>要创新，协作不是唯一的方法，但它是最直接的方法。</li>
+<li>协作发生在当下，只有当你这样做时，它才存在。</li>
+<li>要协作，必须了解你和你的协作同伴为汇聚带来了什么。</li>
+<li>对你的工作充满热情是协作的前提。</li>
+<li>如果你遇到一个问题，需要别人做出改变，那么你尚未真正了解你的问题。</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>用心创作和收集好文章，您的支持将鼓励我继续！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.jpg" alt="joni@efbiz.org WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="joni@efbiz.org Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      joni@efbiz.org
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/" title="敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）">https://github.com/efbiz/2018/05/23/敏捷教练第08课-技巧-敏捷教练的六脉神剑（下）/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/敏捷/" rel="tag"># 敏捷</a>
+          
+            <a href="/tags/Scrum/" rel="tag"># Scrum</a>
+          
+            <a href="/tags/敏捷教练和-ScrumMaster/" rel="tag"># 敏捷教练和 ScrumMaster</a>
+          
+            <a href="/tags/敏捷教练的六脉神剑/" rel="tag"># 敏捷教练的六脉神剑</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/23/敏捷教练第07课-技巧-敏捷教练的六脉神剑（上）/" rel="next" title="敏捷教练第07课-技巧-敏捷教练的六脉神剑（上）">
+                <i class="fa fa-chevron-left"></i> 敏捷教练第07课-技巧-敏捷教练的六脉神剑（上）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/23/敏捷教练第09课-技巧-敏捷教练的提升三式/" rel="prev" title="敏捷教练第09课-技巧-敏捷教练的提升三式">
+                敏捷教练第09课-技巧-敏捷教练的提升三式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="joni@efbiz.org" />
+          <p class="site-author-name" itemprop="name">joni@efbiz.org</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://git.oschina.net/efbiz/" target="_blank" title="Oschina">
+                  
+                  Oschina
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/efbiz" target="_blank" title="GitHub">
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/efbiz" target="_blank" title="豆瓣">
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/efbiz" target="_blank" title="知乎">
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第四剑：问题解决"><span class="nav-number">1.</span> <span class="nav-text">第四剑：问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#敏捷问题解决规则"><span class="nav-number">1.1.</span> <span class="nav-text">敏捷问题解决规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发现与寻找问题"><span class="nav-number">1.2.</span> <span class="nav-text">发现与寻找问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展：团队动态问题之艾伦-布劳恩的团队动态调查"><span class="nav-number">1.2.1.</span> <span class="nav-text">扩展：团队动态问题之艾伦-布劳恩的团队动态调查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展：团队动态问题之-BART（边界、权力、角色、任务）分析"><span class="nav-number">1.2.2.</span> <span class="nav-text">扩展：团队动态问题之 BART（边界、权力、角色、任务）分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#角色"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">角色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#任务"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#权力"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">权力</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#边界"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">边界</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清楚地看待与思考问题"><span class="nav-number">1.3.</span> <span class="nav-text">清楚地看待与思考问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决问题"><span class="nav-number">1.4.</span> <span class="nav-text">解决问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第五剑：冲突领航"><span class="nav-number">2.</span> <span class="nav-text">第五剑：冲突领航</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#冲突中敏捷教练的角色"><span class="nav-number">2.1.</span> <span class="nav-text">冲突中敏捷教练的角色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冲突的五个级别："><span class="nav-number">2.2.</span> <span class="nav-text">冲突的五个级别：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#确定团队的冲突级别"><span class="nav-number">2.3.</span> <span class="nav-text">确定团队的冲突级别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展：冲突级别与语言"><span class="nav-number">2.3.1.</span> <span class="nav-text">扩展：冲突级别与语言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应对冲突"><span class="nav-number">2.4.</span> <span class="nav-text">应对冲突</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展：冲突应对模式"><span class="nav-number">2.4.1.</span> <span class="nav-text">扩展：冲突应对模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#化解团队成员之间的抱怨"><span class="nav-number">2.5.</span> <span class="nav-text">化解团队成员之间的抱怨</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面对无法解决的冲突"><span class="nav-number">2.6.</span> <span class="nav-text">面对无法解决的冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于冲突的最后招式"><span class="nav-number">2.7.</span> <span class="nav-text">关于冲突的最后招式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第六剑：协作指挥"><span class="nav-number">3.</span> <span class="nav-text">第六剑：协作指挥</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#从合作到协作"><span class="nav-number">3.1.</span> <span class="nav-text">从合作到协作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#培养协作个体"><span class="nav-number">3.2.</span> <span class="nav-text">培养协作个体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#培养团队的协作肌肉"><span class="nav-number">3.3.</span> <span class="nav-text">培养团队的协作肌肉</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#揭示协作的真谛"><span class="nav-number">3.4.</span> <span class="nav-text">揭示协作的真谛</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">joni@efbiz.org</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">全站共78.0k字</span>
+</div>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+        
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyt8q81Tz';
+      var conf = 'f4d6f5e35dcd359f030389f32b29a357';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.1"></script>
+
+
+  
+
+</body>
+</html>

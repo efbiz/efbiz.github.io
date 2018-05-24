@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="敏捷,Scrum,敏捷教练和 ScrumMaster,用户故事精要," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="EFbiz" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="自克里斯托弗亚历山大发明建筑模式，经由设计模式，发展到组织模式。模式是一种经过验证的、经过分类的、可以被反复重用的、场景化、定式化的经验总结。模式思维是理性和感性思维的中和，是人固有的一种能力。模式的好处是省力。敏捷管理，也存在一些这样的模式。本文介绍的模式可分为三大类。第一类是 Scrum 本身存在的模式，第二类是在 Scrum 活动中探索出来的模式，第三类是 Scrum 反模式。">
+<meta name="keywords" content="敏捷,Scrum,敏捷教练和 ScrumMaster,用户故事精要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="敏捷教练第04课：储备-scrum的20个子模式">
+<meta property="og:url" content="https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum 的20个子模式/index.html">
+<meta property="og:site_name" content="EFbiz">
+<meta property="og:description" content="自克里斯托弗亚历山大发明建筑模式，经由设计模式，发展到组织模式。模式是一种经过验证的、经过分类的、可以被反复重用的、场景化、定式化的经验总结。模式思维是理性和感性思维的中和，是人固有的一种能力。模式的好处是省力。敏捷管理，也存在一些这样的模式。本文介绍的模式可分为三大类。第一类是 Scrum 本身存在的模式，第二类是在 Scrum 活动中探索出来的模式，第三类是 Scrum 反模式。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum%20的20个子模式/Scrum模式.jpg">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum%20的20个子模式/Scrum子模式.jpg">
+<meta property="og:image" content="https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum%20的20个子模式/Scrum反模式.jpg">
+<meta property="og:updated_time" content="2018-05-23T06:59:09.289Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="敏捷教练第04课：储备-scrum的20个子模式">
+<meta name="twitter:description" content="自克里斯托弗亚历山大发明建筑模式，经由设计模式，发展到组织模式。模式是一种经过验证的、经过分类的、可以被反复重用的、场景化、定式化的经验总结。模式思维是理性和感性思维的中和，是人固有的一种能力。模式的好处是省力。敏捷管理，也存在一些这样的模式。本文介绍的模式可分为三大类。第一类是 Scrum 本身存在的模式，第二类是在 Scrum 活动中探索出来的模式，第三类是 Scrum 反模式。">
+<meta name="twitter:image" content="https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum%20的20个子模式/Scrum模式.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":true,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum 的20个子模式/"/>
+
+
+
+
+
+  <title>敏捷教练第04课：储备-scrum的20个子模式 | EFbiz</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">EFbiz</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Everything For business</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum 的20个子模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="joni@efbiz.org">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="EFbiz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">敏捷教练第04课：储备-scrum的20个子模式</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-14T21:09:59+08:00">
+                2018-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/敏捷Scrum/" itemprop="url" rel="index">
+                    <span itemprop="name">敏捷Scrum</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/敏捷Scrum/敏捷教练和-ScrumMaster/" itemprop="url" rel="index">
+                    <span itemprop="name">敏捷教练和 ScrumMaster</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/05/14/敏捷教练第04课-储备-Scrum 的20个子模式/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/05/14/敏捷教练第04课-储备-Scrum 的20个子模式/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  4,565
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  15
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>自克里斯托弗亚历山大发明建筑模式，经由设计模式，发展到组织模式。模式是一种经过验证的、经过分类的、可以被反复重用的、场景化、定式化的经验总结。模式思维是理性和感性思维的中和，是人固有的一种能力。模式的好处是省力。敏捷管理，也存在一些这样的模式。<br>本文介绍的模式可分为三大类。第一类是 Scrum 本身存在的模式，第二类是在 Scrum 活动中探索出来的模式，第三类是 Scrum 反模式。<br><a id="more"></a></p>
+<h1 id="Scrum-中存在的模式"><a href="#Scrum-中存在的模式" class="headerlink" title="Scrum 中存在的模式"></a>Scrum 中存在的模式</h1><p><img src="Scrum模式.jpg" alt=""></p>
+<p>这部分模式可以帮助我们更好地理解和实施 Scrum，以及评估和改进 Scrum 的实施，也能帮助我们理解 Scrum 的发明。</p>
+<h2 id="模式名称：Backlog"><a href="#模式名称：Backlog" class="headerlink" title="模式名称：Backlog"></a>模式名称：Backlog</h2><p>解决的问题：</p>
+<p>在本质上偏于不确定性的项目中需要知道下一步做什么。需要一种组织方法使得在项目的任何阶段都易于知道下一步要做什么。<br>甘特图方法事先定义任务和锁定时间，无法满足不确定性环境下的项目管理要求。<br>完全不管也不是一种好方法。</p>
+<p>解决方案：</p>
+<p>用 Backlog 组织工作。</p>
+<ul>
+<li>Backlog 是一个排好优先级的列表。高优先级的工作先做。</li>
+<li>Backlog 的总合是产品，Backlog 中工作的完成意味着产品愿景的实现。Backlog 是动态管理的，以便完成的产品是合适的、有竞争力和有用的。</li>
+<li>Backlog 的内容来源很多。可以来自市场、销售、技术、开发部门和客户。</li>
+<li>只有一个人对 Backlog 排序。这个人对产品愿景的实现负责。</li>
+<li>根据市场需要和组织预算，一个或多个 Scrum 团队工作于一个 Backlog。团队从 Backlog 中选择一个迭代可以完成的工作项。</li>
+<li>团队在一个迭代中选择的工作要有一定的内聚度，构成迭代目标。团队在一个迭代内的工作，是为了完成迭代目标。</li>
+<li>团队把工作分解为任务，以便完成迭代目标。</li>
+<li>Backlog 这个简单的物件，上溯产品愿景，下达具体的工作项管理。</li>
+</ul>
+<p>达到的效果：</p>
+<p>项目中的所有工作根据客户需要和团队能力动态排序。</p>
+<h2 id="模式名称：Sprint"><a href="#模式名称：Sprint" class="headerlink" title="模式名称：Sprint"></a>模式名称：Sprint</h2><p>解决的问题：</p>
+<ul>
+<li>工作中涉及探索、创造与测试，而不是简单重复的机械式工作。</li>
+<li>需要优化沟通和信息共享。</li>
+<li>需要在一个时间盒里承诺完成来自 Backlog 的一定的工作量。</li>
+<li>团队需要无打扰地工作，管理层和客户需要看到进展。</li>
+<li>预先计划和命令与控制的方式行不通。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>给开发人员空间进行创造性的工作，学习探索，做实际的工作，免受外部干扰，运用机会和洞见来优化工作方式。</li>
+<li>同时显示真正的进展让管理者和干系人有信心。</li>
+<li>以短周期，小团队，来承载 Backlog 中的一段工作，并产生可交付的产品。</li>
+<li>聚焦，而不是微管理。焦点有不同层级的颗粒度，迭代层级，是团队和干系人共同关注的焦点。迭代之下的焦点和颗粒度，如每天的工作，更多由团队关注就可以了。</li>
+<li>在一个 Sprint 中，外部干扰被排除。团队内外及干系人对这一点有共识。</li>
+<li>团队在过程中可调整工作方式。团队以最好的方式，使用他们的技能经验和创造力，专注于手上的工作，产生可见、可用和可展示的交付。</li>
+<li>创建安全的时间盒，并向客户和干系人做出可信的承诺。</li>
+<li>是团队主动进行的承诺，和对创造性的工作和工作方式的优化。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>所有参与者高度有效而又各有侧重的所有权，包括团队、干系人和客户。</li>
+<li>最大可能完成计划的工作。在每一个周期结束的时候，干系人可以影响和调整后续迭代的计划。因而使得长期计划具有极大的灵活性。</li>
+<li>每日站会的高度可见性，可以帮助发现浪费并很快回归真正的工作。</li>
+<li>为了能够选出迭代的工作，强制产品负责人更好地对 Backlog 排优先级。</li>
+<li>不适用于需要高度指导的人。</li>
+</ul>
+<h2 id="模式名称：每日站会"><a href="#模式名称：每日站会" class="headerlink" title="模式名称：每日站会"></a>模式名称：每日站会</h2><p>解决的问题：</p>
+<ul>
+<li>需要一个方法来控制经验主义和不可预测的流程，例如软件开发，科研，艺术项目和创新设计等。</li>
+<li>对于需要探索、创造性和测试的工作，精确估算是困难的。</li>
+<li>过渡计划不会增加可预测性，只会浪费时间。太过详细和锁定细节日程的计划也难以执行。</li>
+<li>太过频繁的日常跟踪浪费时间，还会打扰开发人员。</li>
+<li>太多跟踪也无助于计划的完成。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>团队每天碰面15分钟，回答三个问题：昨天完成了什么，今天打算完成什么，遇到了什么困难。</li>
+<li>每天发生在同一时间同一地点，强化团队状态、问题和计划的社会化。</li>
+<li>是大家主动参与的一种目标、趋势和风险追踪。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>增加紧迫感。</li>
+<li>提升知识分享，社会化，外化，内化和组合知识（参见野中郁次郎的知识管理、场理论和 SECI 模型）。技术专家成为社群资产。</li>
+<li>鼓励沟通和诚实。</li>
+<li>提升归属感。</li>
+<li>转变文化。通过透明，提升大家对目标的关注和主动参与，进而打磨流程，促进从根本上解决问题，建立学习型组织。</li>
+<li>高度可见的项目状态。</li>
+<li>高度可见的个人生产力。通过同事压力促进卓越。</li>
+<li>更少因阻碍造成的浪费。阻碍被及时发现和解决。</li>
+<li>更少因等待造成的浪费。通过细颗粒度的协作减少等待。</li>
+<li>提升团队内的社交。建立快乐高效的团队。</li>
+</ul>
+<h1 id="Scrum-活动中探索出来的模式"><a href="#Scrum-活动中探索出来的模式" class="headerlink" title="Scrum 活动中探索出来的模式"></a>Scrum 活动中探索出来的模式</h1><p><img src="Scrum子模式.jpg" alt=""></p>
+<p>这部分的模式是作者在 Scrum 的使用中探索出来的模式，可以根据团队情况试用并调整。</p>
+<h2 id="模式名称：团队生物钟"><a href="#模式名称：团队生物钟" class="headerlink" title="模式名称：团队生物钟"></a>模式名称：团队生物钟</h2><p>解决的问题：</p>
+<ul>
+<li>使团队成员更能感受团队工作的节律。</li>
+<li>使团队成员之间的合作更有节拍。</li>
+<li>使团队从良好惯性中受益。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>团队生物钟由团队共同讨论制定和调整。</li>
+<li>团队生物钟有两种，每天级别的和迭代级别的。</li>
+<li>在每天级别的团队生物钟里，大概包括以下四种时间。</li>
+<li>每日站会时间，15分钟。</li>
+<li>站会后讨论时间，大概1小时。不是全员参与，话题和人按需设置。</li>
+<li>团队核心时间，大家都能找到彼此且欢迎骚扰的时间，可以选取每天的两个时间段。</li>
+<li>私密时间，即不欢迎打扰的时间，个人可以集中精力做一下需要专注的事。</li>
+<li>迭代级别的团队生物钟也大概包括四种时间。</li>
+<li>日常工作时间。</li>
+<li>Scrum 的五个会议时间。</li>
+<li>Scrum 之外的会议时间，比如知识分享，代码评审等。</li>
+<li>发布的准备时间和发布时间。</li>
+<li>迭代级别及每日级别的各种生物钟要形成节律。</li>
+</ul>
+<p>产生的效果：</p>
+<ul>
+<li>各项活动更能准时高效开展。</li>
+<li>团队成员有专注的时间做专注的事情。</li>
+<li>工作的节律感带来更高的员工满意度。</li>
+<li>好习惯帮助减少团队活动和任务间的切换成本，产生效益。</li>
+</ul>
+<h2 id="模式名称：会议议程精确到十分钟。"><a href="#模式名称：会议议程精确到十分钟。" class="headerlink" title="模式名称：会议议程精确到十分钟。"></a>模式名称：会议议程精确到十分钟。</h2><p>解决的问题：</p>
+<ul>
+<li>会议目的不明确，流程不清晰，执行不聚焦，效率低。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>Scrum Master 提前收集议题，设计议程，尽量切割到以十分钟为颗粒度。</li>
+<li>确实不能切割的，可以以20分钟或30分钟为颗粒度。对于不能切割的，也可以寻找一些切割的角度，帮助会议的焦点有效流动，即所有人能同时有效地关注一个点，当一个点关注完，流动到下一个点。</li>
+<li>在执行每一议程前声明时间盒。</li>
+<li>执行时可以根据情况调整，并为下一次议程设计提供经验。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>会议整体效率更高。</li>
+<li>在某个小议程，目标更明确，团队更专注。</li>
+<li>通过提升会议的效率与效能，提升团队满意度，更好地完成团队目标。</li>
+</ul>
+<h2 id="模式名称：产品列表业务精化会与技术精化会"><a href="#模式名称：产品列表业务精化会与技术精化会" class="headerlink" title="模式名称：产品列表业务精化会与技术精化会"></a>模式名称：产品列表业务精化会与技术精化会</h2><p>解决的问题：</p>
+<ul>
+<li>如果只讨论业务，不讨论技术方案，无法进行估算。因此到了计划会上也无法做出靠谱的计划和承诺。</li>
+<li>在同一个精化会上既讨论业务也讨论技术，时间不够，而且团队的准备度也不足。</li>
+<li>把技术方案的制定留到会后，可能受其他任务的挤压，无法确保能制定出。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>把精化会分解为两个，业务精化会和技术精化会。</li>
+<li>在业务精化会上，集中精力梳理业务需求。</li>
+<li>识别出需要提前制定技术方案的故事和可以直接带到计划会上的故事。</li>
+<li>对于需要制定技术方案的故事，指定专人调查，并在稍后的时间举行技术精化会，产生技术方案。</li>
+<li>两个精化会的时间都固化。</li>
+</ul>
+<p>产生的效果：</p>
+<ul>
+<li>业务精化会聚焦于业务，主题清晰，效率高。</li>
+<li>技术精化会专注于技术方案的制定。</li>
+<li>因此到计划会时可以制定靠谱的计划和承诺。</li>
+<li>整体工作过程更加有条不紊，团队对完成迭代目标更有信心。</li>
+</ul>
+<h2 id="模式名称：一人天任务"><a href="#模式名称：一人天任务" class="headerlink" title="模式名称：一人天任务"></a>模式名称：一人天任务</h2><p>解决的问题：</p>
+<ul>
+<li>培养当日事当日毕。</li>
+<li>帮助发现障碍。</li>
+<li>形成流动。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>尽量把任务的平均大小向一人天靠拢。</li>
+<li>理解这个模式的目的，而不是照搬形式。</li>
+<li>任务可以在计划会产生，也可以在每日站会动态产生。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>更好的流动。</li>
+<li>更好的风险识别和管理。</li>
+</ul>
+<h2 id="模式名称：故事-X-人矩阵"><a href="#模式名称：故事-X-人矩阵" class="headerlink" title="模式名称：故事 X 人矩阵"></a>模式名称：故事 X 人矩阵</h2><p>解决的问题：</p>
+<ul>
+<li>清晰呈现不同人员在同一个故事上的合作。</li>
+<li>清晰呈现每人当前手上的任务数。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>在白板 To Do 列中，按故事带任务两级呈现，故事从上到下反映优先级，任务从左到右反映大致的先后顺序。</li>
+<li>在 Doing 列中，自左到右按人排列。故事与人形成矩阵。</li>
+<li>每日站会进行的顺序是按故事泳道，故事驱动。</li>
+<li>每个故事涉及到的人讲解和拉动任务。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>更清晰的合作呈现。</li>
+<li>更清晰的多任务呈现。</li>
+<li>更好的故事和任务流动。</li>
+</ul>
+<h2 id="模式名称：随机一分钟项目经理"><a href="#模式名称：随机一分钟项目经理" class="headerlink" title="模式名称：随机一分钟项目经理"></a>模式名称：随机一分钟项目经理</h2><p>解决的问题：</p>
+<ul>
+<li>确保在每日站会中，每人都关心团队目标。</li>
+<li>确保在每日站会中，每人都认真听他人说什么。</li>
+<li>并以此确保隐性知识传递，团队成员互相学习。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>在每日站会最后，以随机方法产生一分钟项目经理。</li>
+<li>一分钟项目经理做五点说明。</li>
+<li>我们的迭代目标是什么。</li>
+<li>趋势是什么，是否可控。</li>
+<li>主要风险和障碍是什么，如何管理。</li>
+<li>团队士气如何。</li>
+<li>邀请全体团队成员对完成迭代目标的信心点赞，以创造一个再次思考风险的契机。并宣布散会。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>站会中团队成员更好的投入。</li>
+<li>更好的风险和趋势管理，更好的目标完成。</li>
+<li>更好的团队凝聚力。</li>
+</ul>
+<h2 id="模式名称：Scrum-风险管理分类"><a href="#模式名称：Scrum-风险管理分类" class="headerlink" title="模式名称：Scrum 风险管理分类"></a>模式名称：Scrum 风险管理分类</h2><p>解决的问题：</p>
+<ul>
+<li>风险分类不清晰，难以确定合适的负责人。</li>
+<li>风险分类与角色职责没有匹配。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>风险分为三类：与产品和客户相关的，与技术相关的，与社会化相关的。</li>
+<li>产品和技术相关的，由产品负责人解决。</li>
+<li>技术相关的，由团队解决。</li>
+<li>社会化相关的，由 Scrum Master 解决。</li>
+<li>风险管理可视化。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>更好的风险分配。</li>
+<li>风险管理与角色职责匹配。</li>
+<li>有意识的风险管理。</li>
+</ul>
+<h2 id="模式名称：知识分享基金"><a href="#模式名称：知识分享基金" class="headerlink" title="模式名称：知识分享基金"></a>模式名称：知识分享基金</h2><p>解决的问题：</p>
+<ul>
+<li>给分享者一点激励，更多代表的是团队的认可。</li>
+<li>让所有人，不管是分享者还是参与者，都成为分享的主动拥有者。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>由团队或个人众筹知识分享基金，不用太多。</li>
+<li>每迭代固定设一个知识分享时间，分享内容不限，只要对团队或项目有帮助。</li>
+<li>分享者主动提出分享话题。</li>
+<li>如多人都想分享，由多位分享者协调分享时间。</li>
+<li>每次分享结束时，给分享者一个小礼物。</li>
+<li>选取每次分享的重要照片，形成团队分享相册。</li>
+</ul>
+<p>达成的效果：</p>
+<ul>
+<li>更好的知识传播。</li>
+<li>更好的团队成员之间的连接。</li>
+</ul>
+<h2 id="模式名称：同事赞扬"><a href="#模式名称：同事赞扬" class="headerlink" title="模式名称：同事赞扬"></a>模式名称：同事赞扬</h2><p>解决的问题：</p>
+<ul>
+<li>提供一个团队成员互相感谢的机会，把内心的感谢表达出来。</li>
+<li>以此加深彼此了解。</li>
+<li>并形成一个更有凝聚力的团队。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>在回顾会议开始时，增加一个同事赞扬环节。</li>
+<li>每人以 Post-It 写下要感谢的人，并把所有 Post-It 放在一起。</li>
+<li>Scrum Master 随机抽取一张，让写的人面向要感谢的人表达感谢，包括感谢的原因。</li>
+<li>依次过完所有 Post-It。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>更高的士气，更好的团队凝聚力。</li>
+<li>更高的产出。</li>
+</ul>
+<h2 id="模式名称：卓越驱动的迭代回顾会议"><a href="#模式名称：卓越驱动的迭代回顾会议" class="headerlink" title="模式名称：卓越驱动的迭代回顾会议"></a>模式名称：卓越驱动的迭代回顾会议</h2><p>解决的问题：</p>
+<ul>
+<li>迭代回顾会议缺乏结构与效率。</li>
+<li>迭代回顾会议缺乏有利于长期提升的制度化。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>团队制定一组卓越指标，例如跨职能团队、价值流、团队工作。卓越指标代表团队为了完成产品目标和迭代目标所最看重的东西。</li>
+<li>针对每一指标，制定一系列子项或检查项。</li>
+<li>定期更新指标定义。</li>
+<li>在迭代回顾会上，把卓越指标打印张贴。</li>
+<li>针对每一指标，集体评估团队做得好的地方和需要改善的地方。产生改善措施。</li>
+</ul>
+<p>产生的效果：</p>
+<ul>
+<li>更系统化结构化制度化的回顾。</li>
+<li>更持续的改进。</li>
+</ul>
+<h2 id="模式名称：同事评估"><a href="#模式名称：同事评估" class="headerlink" title="模式名称：同事评估"></a>模式名称：同事评估</h2><p>解决的问题：</p>
+<ul>
+<li>在传统的由经理进行的评估中，多数员工是不满意的。</li>
+</ul>
+<p>解决方案：</p>
+<ul>
+<li>在每个迭代结束的时候，分配给每个团队成员等量的代币。</li>
+<li>规则只有一条，就是要把代币送给其他团队成员，自己不能留。至于全部送给一个人，还是平均送给每个人，是当事人自己的决定。</li>
+<li>根据组织的形态，可以有两种方式：只有结果公开，和结果和过程（即谁送给谁多少）都透明。</li>
+<li>根据组织的形态，决定代币的用途，如只是兑换小礼品，还是兑换奖金。</li>
+<li>是否要使用，如何使用，使用的程度，需获得组织和团队的共识。</li>
+</ul>
+<p>达到的效果：</p>
+<ul>
+<li>同事评估更能反映一个人的真实表现。</li>
+</ul>
+<h1 id="Scrum-反模式"><a href="#Scrum-反模式" class="headerlink" title="Scrum 反模式"></a>Scrum 反模式</h1><p><img src="Scrum反模式.jpg" alt=""></p>
+<p>这部分是在 Scrum 的使用中应该避免的模式。</p>
+<h2 id="产品负责人的反模式"><a href="#产品负责人的反模式" class="headerlink" title="产品负责人的反模式"></a>产品负责人的反模式</h2><ul>
+<li>产品负责人在迭代中大部分时间缺席，不能回答团队的问题。</li>
+<li>在迭代计划之后，改变故事的范围或验收标准。</li>
+<li>对于无法实现或不再有效的验收标准，缺乏改变的灵活度。</li>
+<li>产品负责人不能及时对完成的故事提供反馈。</li>
+<li>误用取消迭代的权力。</li>
+<li>在迭代目标不再有效时，也不取消迭代。</li>
+</ul>
+<h2 id="开发团队的反模式"><a href="#开发团队的反模式" class="headerlink" title="开发团队的反模式"></a>开发团队的反模式</h2><ul>
+<li>没有 WIP（进行中的工作项）限制。</li>
+<li>在遇到阻塞时，开始其他任务，使自己保持忙碌。</li>
+<li>任务板不能保持更新。</li>
+<li>工作于没有显示在任务板的工作。</li>
+<li>镀金，增加不必要的工作。</li>
+</ul>
+<h2 id="Scrum-Master-的反模式"><a href="#Scrum-Master-的反模式" class="headerlink" title="Scrum Master 的反模式"></a>Scrum Master 的反模式</h2><ul>
+<li>允许管理者或干系人在迭代中打扰团队，让团队从事与迭代目标无关的事情或会议。</li>
+<li>不能支持需要帮助的团队成员。</li>
+<li>允许微管理，允许产品负责人向团队分配任务。</li>
+<li>没有回顾会议。</li>
+</ul>
+<h2 id="Scrum-团队的反模式"><a href="#Scrum-团队的反模式" class="headerlink" title="Scrum 团队的反模式"></a>Scrum 团队的反模式</h2><ul>
+<li>有人没有询问团队就把任务加到迭代列表。</li>
+<li>不产生交付的迭代。</li>
+<li>做不是产品负责人认为当前应该做的工作。</li>
+<li>没有紧迫感。</li>
+<li>新人加入时，没有接轨计划。</li>
+<li>可变的迭代长度。</li>
+</ul>
+<h2 id="管理者的反模式"><a href="#管理者的反模式" class="headerlink" title="管理者的反模式"></a>管理者的反模式</h2><ul>
+<li>在紧急情况下放弃 Scrum。</li>
+<li>经常在团队之间重新分配团队成员。</li>
+<li>不经产品负责人，直接向团队分配特定任务。</li>
+</ul>
+<h2 id="干系人反模式"><a href="#干系人反模式" class="headerlink" title="干系人反模式"></a>干系人反模式</h2><ul>
+<li>偷偷向团队加入任务。</li>
+<li>把每件事都当成紧急的。</li>
+<li>打扰团队。</li>
+<li>模式是一种语言，语言承载思想。Scrum 中的模式承载了“更好”在不同场景中的实现。下一章探讨精益体系，看作为敏捷起源的精益如何在敏捷中发挥作用。</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>用心创作和收集好文章，您的支持将鼓励我继续！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.jpg" alt="joni@efbiz.org WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="joni@efbiz.org Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      joni@efbiz.org
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum 的20个子模式/" title="敏捷教练第04课：储备-scrum的20个子模式">https://github.com/efbiz/2018/05/14/敏捷教练第04课-储备-Scrum 的20个子模式/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/敏捷/" rel="tag"># 敏捷</a>
+          
+            <a href="/tags/Scrum/" rel="tag"># Scrum</a>
+          
+            <a href="/tags/敏捷教练和-ScrumMaster/" rel="tag"># 敏捷教练和 ScrumMaster</a>
+          
+            <a href="/tags/用户故事精要/" rel="tag"># 用户故事精要</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/14/敏捷教练第03课-储备-用户故事精要/" rel="next" title="敏捷教练第03课储备-用户故事精要">
+                <i class="fa fa-chevron-left"></i> 敏捷教练第03课储备-用户故事精要
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/14/敏捷教练第05课-储备-精益体系精要/" rel="prev" title="敏捷教练第05课-储备-精益体系精要“">
+                敏捷教练第05课-储备-精益体系精要“ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="joni@efbiz.org" />
+          <p class="site-author-name" itemprop="name">joni@efbiz.org</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://git.oschina.net/efbiz/" target="_blank" title="Oschina">
+                  
+                  Oschina
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/efbiz" target="_blank" title="GitHub">
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/efbiz" target="_blank" title="豆瓣">
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/efbiz" target="_blank" title="知乎">
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Scrum-中存在的模式"><span class="nav-number">1.</span> <span class="nav-text">Scrum 中存在的模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：Backlog"><span class="nav-number">1.1.</span> <span class="nav-text">模式名称：Backlog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：Sprint"><span class="nav-number">1.2.</span> <span class="nav-text">模式名称：Sprint</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：每日站会"><span class="nav-number">1.3.</span> <span class="nav-text">模式名称：每日站会</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Scrum-活动中探索出来的模式"><span class="nav-number">2.</span> <span class="nav-text">Scrum 活动中探索出来的模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：团队生物钟"><span class="nav-number">2.1.</span> <span class="nav-text">模式名称：团队生物钟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：会议议程精确到十分钟。"><span class="nav-number">2.2.</span> <span class="nav-text">模式名称：会议议程精确到十分钟。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：产品列表业务精化会与技术精化会"><span class="nav-number">2.3.</span> <span class="nav-text">模式名称：产品列表业务精化会与技术精化会</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：一人天任务"><span class="nav-number">2.4.</span> <span class="nav-text">模式名称：一人天任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：故事-X-人矩阵"><span class="nav-number">2.5.</span> <span class="nav-text">模式名称：故事 X 人矩阵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：随机一分钟项目经理"><span class="nav-number">2.6.</span> <span class="nav-text">模式名称：随机一分钟项目经理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：Scrum-风险管理分类"><span class="nav-number">2.7.</span> <span class="nav-text">模式名称：Scrum 风险管理分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：知识分享基金"><span class="nav-number">2.8.</span> <span class="nav-text">模式名称：知识分享基金</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：同事赞扬"><span class="nav-number">2.9.</span> <span class="nav-text">模式名称：同事赞扬</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：卓越驱动的迭代回顾会议"><span class="nav-number">2.10.</span> <span class="nav-text">模式名称：卓越驱动的迭代回顾会议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模式名称：同事评估"><span class="nav-number">2.11.</span> <span class="nav-text">模式名称：同事评估</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Scrum-反模式"><span class="nav-number">3.</span> <span class="nav-text">Scrum 反模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#产品负责人的反模式"><span class="nav-number">3.1.</span> <span class="nav-text">产品负责人的反模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发团队的反模式"><span class="nav-number">3.2.</span> <span class="nav-text">开发团队的反模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Scrum-Master-的反模式"><span class="nav-number">3.3.</span> <span class="nav-text">Scrum Master 的反模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Scrum-团队的反模式"><span class="nav-number">3.4.</span> <span class="nav-text">Scrum 团队的反模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管理者的反模式"><span class="nav-number">3.5.</span> <span class="nav-text">管理者的反模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#干系人反模式"><span class="nav-number">3.6.</span> <span class="nav-text">干系人反模式</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">joni@efbiz.org</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">全站共78.0k字</span>
+</div>
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+        
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyt8q81Tz';
+      var conf = 'f4d6f5e35dcd359f030389f32b29a357';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.1"></script>
+
+
+  
+
+</body>
+</html>
