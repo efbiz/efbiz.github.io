@@ -183,7 +183,7 @@ Scrum 的另一根植于日本的基础，是1986年野中郁次郎和竹内弘�
 ### 敏捷基础类库
 
 + Kent Beck 等的 <Manifesto for Agile Software Development> （《敏捷宣言》）。
-+ 敏捷框架类库
+### 敏捷框架类库
 + Jeff Sutherland & Ken Schwaber <The Scrum Guide>
 + Kent Beck <Embrace Change: Extreme Programming Explained>（《拥抱变化：解析极限编程》）
 + Mike Cohn <User Story Applied in Agile Software Development>（《用户故事与敏捷方法》）<Agile Estimation and Planning>（《敏捷估算与规划》）
